@@ -19,30 +19,6 @@ p {
     text-align: center;
 }
 
-.botones {
+.btnes {
     text-align: center;
-
-
 }
-.contenedorHome {
-    display: block;
-    margin: auto;
-}
-img {
-    display: block;
-    margin: auto;
-}
-.contenedorHome{
-    display:inline-block;
-    position: relative;
-    }
-.contenedorHome a{
-    position:static;
-    bottom:4em;
-    right:4em;
-    background-color:#BAB8B4;
-    border-radius:1.5em;
-    color:rgb(17, 16, 16);
-    text-transform:uppercase;
-    padding:1em 1.5em;
-    }
