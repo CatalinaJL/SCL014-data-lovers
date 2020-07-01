@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(fondo.png);
     width: 100%;
-    height: 100%;
-    background-color:#2B3E53;
-
+    height: 100vh;
+    background-size: cover;
 }
 
 h1 {
@@ -21,6 +21,28 @@ p {
 
 .botones {
     text-align: center;
-    
+
 
 }
+.contenedorHome {
+    display: block;
+    margin: auto;
+}
+img {
+    display: block;
+    margin: auto;
+}
+.contenedorHome{
+    display:inline-block;
+    position: relative;
+    }
+.contenedorHome a{
+    position:static;
+    bottom:4em;
+    right:4em;
+    background-color:#BAB8B4;
+    border-radius:1.5em;
+    color:rgb(17, 16, 16);
+    text-transform:uppercase;
+    padding:1em 1.5em;
+    }
