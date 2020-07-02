@@ -4,4 +4,7 @@
 */
 import data from './data/potter/potter.js';
 
-console.log(data[0].house);
+console.log(data[14]);
+
+document.getElementById("Personajes").innerHTML = "¡Bienvenido!" + "estos son los personajes" +":" + data[0].name, data[1].name;
+
