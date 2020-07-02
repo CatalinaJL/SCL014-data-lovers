@@ -6,26 +6,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
     <h1>BIENVENIDO A REVELIO</h1>
     <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p>
     <p>Elige una de las siguientes opciones para conocer más del mundo de Harry Potter:</p>
+    </header>
 <br>
 <br>    
-<div class="btnes">
-  <form action="/src/personajes.html"  target="_self">
-    <input type="submit" value="Personajes" id= "Personajes"></form>
-  <form action="/src/casas.html"  target="_self">
-    <input type="submit" value="Casas" id= "Casas"></form>
-  <form action="/src/varitas.html"  target="_self">
-      <input type="submit" value="Varitas" id= "Varitas"></form>
-  
-</div>
+
+
     
 
-    </section>
-    
+  
+  <section id="input-box">
+  <select id="selectPersonajes" class="ocultar">
+    <option >Seleccion de Personajes</option>
+    <option value="estudiante">Estudiante</option>
+    <option value="profesores">Profesores</option>
+    <option value="otrosPersonajes">Otros Personajes</option>
+
+
+  </select>
+
+  <select id="casas" class="ocultar">
+    <option value="SeleccionCasas">Seleccione Casas</option>
+    <option value="Gryffindor">Gryffindor</option>
+    <option value="Slytherin">Slytherin</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+  </select>
+
+
+  <select id="varita" class="ocultar">
+    <option value="varitas">Seleccione Varitas</option>
+    <option value="phoenix feather">phoenix feather</option>
+    <option value="dragon heartstring">dragon heartstring</option>
+    <option value="unicorn tail-hair">unicorn tail-hair</option>
+  </select>
+
+</section>
     <div id="root"></div>
     <p></p>
     <script src="main.js" type="module"></script>
+
+    <footer>
+        <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
+        <p1> Catalina & Marcela "LABORATORIA"</p1>
+        
+
+    </footer>
   </body>
 </html>
