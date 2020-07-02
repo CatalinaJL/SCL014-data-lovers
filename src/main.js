@@ -1,7 +1,7 @@
-import { example } from './data.js';
-
+/*import data from './data/potter/potter.js';
+*/
+/*import { caractherName } from './data.js';
+*/
 import data from './data/potter/potter.js';
 
-console.log(example, data);
-
-
+console.log(data[0].house);

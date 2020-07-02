@@ -2,4 +2,4 @@
 
 export const example = () => 'example';
 
-export const anotherExample = () => 'OMG';
+export const caractherName = () => exportdefault.name
