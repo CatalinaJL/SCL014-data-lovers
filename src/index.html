@@ -2,45 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
+    
     <title>Data Lovers</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script> 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-    <h1>BIENVENIDO A REVELIO</h1>
-    <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p>
-    <p>Elige una de las siguientes opciones para conocer más del mundo de Harry Potter:</p>
-    </header>
-<br>
-<br>    
+    <div class="contenedor">
+      <header>
+        <div class="logo">
+        <h1>BIENVENIDO A REVELIO</h1>
+        <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p>
+        <p>Elige una de las siguientes opciones para conocer más del mundo de Harry Potter:</p>
+        </div>  
+        <section class="categorias"   id="input-box">
+          <select id="selectPersonajes" class="ocultar">
+            <option >Seleccion de Personajes</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="profesores">Profesores</option>
+            <option value="otrosPersonajes">Otros Personajes</option>
+          </select>
+          <select id="casas" class="ocultar">
+            <option value="SeleccionCasas">Seleccione Casas</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+          </select>
+         <select id="varita" class="ocultar">
+            <option value="varitas">Seleccione Varitas</option>
+            <option value="phoenix feather">phoenix feather</option>
+            <option value="dragon heartstring">dragon heartstring</option>
+            <option value="unicorn tail-hair">unicorn tail-hair</option>
+          </select>
+        </section>
+      </header>
 
-  <section id="input-box">
-  <select id="selectPersonajes" class="ocultar">
-    <option >Seleccion de Personajes</option>
-    <option value="estudiante">Estudiante</option>
-    <option value="profesores">Profesores</option>
-    <option value="otrosPersonajes">Otros Personajes</option>
+      <section class="gridDeImagenes" id="gridDeImagenes">
+        <div class="gridDePersonajes" id="gridDePersonajes"></div>
+        <div class="item">
+          <h1>Imagenes </h1>
+            <div class="item-contenido">
+              
+              <img src='http://hp-api.herokuapp.com/images/harry.jpg' alt="">
+
+            </div>
+        </div>
+        <div class="item"  >
+          <div class="item-contenido">
+            <img src='http://hp-api.herokuapp.com/images/harry.jpg' alt="">
+          </div>
+       </div>
+      <div class="item"  >
+        <div class="item-contenido">
+          
+          <img src='http://hp-api.herokuapp.com/images/harry.jpg' alt="">
+        </div>
+     </div>
+      </section>
 
 
-  </select>
-
-  <select id="casas" class="ocultar">
-    <option value="SeleccionCasas">Seleccione Casas</option>
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Slytherin">Slytherin</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-    <option value="Hufflepuff">Hufflepuff</option>
-  </select>
 
 
-  <select id="varita" class="ocultar">
-    <option value="varitas">Seleccione Varitas</option>
-    <option value="phoenix feather">phoenix feather</option>
-    <option value="dragon heartstring">dragon heartstring</option>
-    <option value="unicorn tail-hair">unicorn tail-hair</option>
-  </select>
 
-</section>
+      </div>
+
+  
+
+  
+
     <div id="root"></div>
     <p></p>
     <script src="main.js" type="module"></script>
@@ -48,7 +78,23 @@
     <footer>
         <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
         <p1> Catalina & Marcela "LABORATORIA"</p1>
-        
+        <div class="redes-sociales">
+          <div class="contenedor-icono">
+            <a href="http://www.twitter.com" target="_blank" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a href="http://www.facebook.com" target="_blank" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a href="http://www.instagram.com" target="_blank" class="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
 
     </footer>
   </body>

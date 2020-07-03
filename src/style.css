@@ -1,6 +1,86 @@
+/* partimos dejando la pagina sin margenes*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* creamos contendor para que centre las tarjetas y el cuerpo del header*/
+.contenedor {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+/*header*/
+
+header {
+	padding: 40px 0;
+}
+
+header .logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .logo p {
+	color: #BAB8B4;
+}
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/* filtros */
+header .ocultar {
+    color: rgb(15, 15, 14);
+    background-color: #BAB8B4;
+    border: 3px solid #BAB8B4;
+    border-radius: 10px;
+    text-align: center;
+   
+   
+	margin: 10px 20px;
+	font-size: 18px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* grid de Imagenes aqui trabajerems el espacio donde saldran las imagenes*/
+
+.gridDeImagenes{
+	position: relative;
+	width: 100%;
+    
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+
+/*  en ste campo quiero trabajar solo las imagenes, quiero poner un cursor de manito sobre la imagen
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+*/
+
+
+
+
+
 body {
-    margin: 0;
-    padding: 0;
+    
     background-image: url(fondo.png);
     width: 100%;
     height: 100vh;
@@ -19,29 +99,6 @@ p {
     text-align: center;
 }
 
-.btnes {
-    text-align: center;
-}
-
-/* filtros */
-#input-box{
-    display:flex;
-    justify-content: center;
-  }
-  #input-box select  {
-   width: 15%;
-   padding: 12px 20px;
-   margin: 15px 100px;
-   color: rgb(15, 15, 14);
-   background-color: #BAB8B4;
-   border: 3px solid #BAB8B4;
-   border-radius: 4px;
-   text-align: center;
-   font-size: 15px;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-  
- }
- 
 
 
 
@@ -51,6 +108,8 @@ p {
 
 
 
+
+/* contenedor Footer*/
 footer{
     background:#BAB8B4;
     text-align:  center;
@@ -62,4 +121,35 @@ footer{
     color:rgba(13, 14, 13, 0.719) ;
   
   }
-  
+  /* iconos de las redes sociales centrados*/
+  footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+/* contenedor redondo para los iconos de las redes sociales*/
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: rgba(13, 14, 13, 0.719);
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+/* colores de los contendores de las redes sociales*/
+
+footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+/* centrado de los iconos de las redes sociales*/
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
