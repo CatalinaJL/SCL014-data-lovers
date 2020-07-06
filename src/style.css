@@ -43,7 +43,7 @@ header .ocultar {
 	margin: 10px 20px;
 	font-size: 18px;
     font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family:'Sahitya', serif;
 }
 
 
@@ -132,13 +132,13 @@ body {
 }
 
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Sahitya', serif;
     color:#BAB8B4;
     text-align: center;
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Roboto Slab', serif;
     color:#BAB8B4;
     text-align: center;
 }
@@ -158,7 +158,7 @@ footer{
     background:#BAB8B4;
     text-align:  center;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Roboto Slab', serif;;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top:25px;
