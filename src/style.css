@@ -46,39 +46,89 @@ header .ocultar {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-/* grid de Imagenes aqui trabajerems el espacio donde saldran las imagenes*/
 
-.gridDeImagenes{
+
+/* TARJETAS*/
+.personajePelicula{
+	perspective: 700px;
+  }
+  
+  .personajePelicula,
+  .tarjeta {
+	margin: 2px;
+  }
+  .tarjeta {
 	position: relative;
-	width: 100%;
-    
-}
-
-.grid .item {
+	transform-style: preserve-3d;
+	transition: transform .3s linear;
+  }
+  
+  .tarjeta .frente,
+  .tarjeta .atras {
+	margin: 15px;
+	padding: 20px;
+	backface-visibility: hidden;
+  }
+  
+  .tarjeta .frente {
+	background-image: url(fondotarjeta.jpg); 
+	color:#dfc161  ;
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
+  }
+  .tarjeta .atras {
+	background-image: url(tarjetaAtras.png);
+	color:#ddda14 ;
+	margin: 1px;
+	padding: 30px;
+	text-align: left;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	border-radius: 9px;
+	border-style: solid;
+	border-color:  #796B07;
+  
+  }
+  .tarjeta .atras {
 	position: absolute;
-	display: block;
-	padding: 0;
-	margin: 10px;
-	width: calc(33.333333% - 20px);
-}
+	top: 0;
+	transform: rotateY(180deg);
+  }
+  
+  .personajePelicula:hover .tarjeta {
+	transform: rotateY(180deg);
+  }
+  .ocultar {
+	display:none;
+  }
+  .mostrar {
+	display:block;
+  }
+
+  div .imageneslogo img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #796B07;
+  }
+ 
+  div .imagenJuego img {
+	width: 200px;
+	height: 100px;
+  
+  }
 
 
-/*  en ste campo quiero trabajar solo las imagenes, quiero poner un cursor de manito sobre la imagen
-.grid .item-contenido {
-	position: relative;
-}
-
-.grid .item img {
-	width: 100%;
-	cursor: pointer;
-	vertical-align: top;
-}
-*/
 
 
 
 
-
+  
 body {
     
     background-image: url(fondo.png);
