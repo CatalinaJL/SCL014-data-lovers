@@ -4,6 +4,15 @@
 */
 import data from './data/potter/potter.js';
 
+console.log(data);
+//document.getElementById("demo").innerHTML = data.name;
+
+data.forEach(name => {
+  for(let i=0; i<data.length; i++){
+    document.getElementById("demo").innerHTML = data.name;
+  }
+  
+});
 /*console.table(data[0].name,data[0].house,data[0].patronus, data[0].wand.wood); 
 console.log(data[1].name,data[1].house,data[1].patronus, data[1].wand.wood)
 */
@@ -30,24 +39,24 @@ console.log (gridCentral);
 
 */
 
-const datosPersonajes =data;
-console.log(datosPersonajes);
+//const datosPersonajes =data;
+//console.log(datosPersonajes);
 
-const tarjetaDato= datosPersonajes.filter (  datas => (datas.yearOfBirth< 1980) ) ; /*para filtrar debes si o si pneruna condicion*/
-console.log (tarjetaDato); 
+//const tarjetaDato= datosPersonajes.filter (  datas => (datas.yearOfBirth< 1980) ) ; /*para filtrar debes si o si pneruna condicion*/
+//console.log (tarjetaDato); 
 
 /*document.getElementById("gridDePersonajes").innerHTML = " Nombre" + tarjetaDato ;
 */
 
 
-const fullName = datosPersonajes.map (actor=>  `${actor.name} ${actor.house}`); /*el map, recorre todos los datos y te entrega lo que solicitas
+//const fullName = datosPersonajes.map (actor=>  `${actor.name} ${actor.house}`); /*el map, recorre todos los datos y te entrega lo que solicitas
 /*document.getElementById("gridDePersonajes").innerHTML = " Nombre" + fullName ;        
 */
-console.log (fullName)
+//console.log (fullName)
 
 /*data.forEach (alert);*/
 /*document.getElementById("gridDePersonajes").innerHTML=data.forEach;*/
-
+/*
 const dataPersonajes = (datosPersonajes) => {
     const personajes = document.createElement('article');
     personajes.className = 'personajePelicula';
@@ -74,4 +83,4 @@ const dataPersonajes = (datosPersonajes) => {
   };
   
 
-
+*/
