@@ -1,5 +1,5 @@
-import mainAtributtes from './data.js';
-
+import students from './data.js';
+//import mainAtributtes from './data.js';
 //import { mainAtributtes } from './data.js';
 
 //import data from './data/potter/potter.js';
