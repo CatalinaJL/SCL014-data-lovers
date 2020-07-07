@@ -18,14 +18,23 @@ console.log(mainAtributtes)
 const students = dataHP.filter(hogwarts => (hogwarts.name !==""));
 console.log(students)
 
-const fullNames = dataHP.map(caracther => `${caracther.name} ${caracther.house}`);
-console.log(fullNames);
+const fullNames = dataHP.map(caracther => `${caracther.name} ${caracther.species} ${caracther.house} ${caracther.ancestry} ${caracther.wand.wood}`);
+//const importantInformation = fullNames;
+const importantInformation = () =>{
+    let arrayFullNames= fullNames;
+    for (i=0, i<arrayFullNames.length;i++;
+    console.log(importantInformation[i]));
+},
+
+//const arrayFullNames = fullNames.values;
+//console.log(arrayFullNames);
+//console.table(fullNames);
 /*const data= potter.data
 console.log(dataHP); 
 export const example = () => 'example';
 */
 
-export default fullNames; 
+//export default mainAtributtes; 
 export default students;
 
 //const dataHP = () => 'OMG';
