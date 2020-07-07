@@ -1,30 +1,30 @@
-/*import data from './data/potter/potter.js';
-*/
-/*import { caractherName } from './data.js';
-*/
-import data from './data/potter/potter.js';
+import mainAtributtes from './data.js';
 
-console.log (data);
-console.log (data[0].name);
+//import { mainAtributtes } from './data.js';
 
-console.log (data);
+//import data from './data/potter/potter.js';
+
+//import data from './data.js';
 
 
+
+//console.log (data);
+//console.log (data[0].name);
+
+//console.log (data);
+
+//for (let i=0 ; i<data.length; i++) {}
 
 let personajes = document.getElementById("gridDePersonajes");
 let botonPersonajes= document.getElementById ("Personajes");
 
 const dataPersonajes = (data) => {
-    console.log (data);
-    
-    for (let i=0 ; i<data.length; i++) {
-        
-     
-    personajes.innerHTML = `
-      <div class="tarjeta">
-        <div class="frente">
+    //console.log (data);
+          personajes.innerHTML = `
+         <div class="tarjeta">
+         <div class="frente">
            
-           <h1>${data[i].name}</h1>
+           <h1>${data.name}</h1>
            <div class ="imagenPersonaje"><img src=${data.image}></div>
         </div>
         <div class="atras">
@@ -41,6 +41,8 @@ const dataPersonajes = (data) => {
         
         console.log (personajes);
     //return personajes;
-    };
+   
   };
+  
   botonPersonajes.addEventListener("click",dataPersonajes);
+ 
