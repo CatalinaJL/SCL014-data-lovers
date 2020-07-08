@@ -71,7 +71,7 @@ header .ocultar {
   }
   
   .tarjeta .frente {
-	background-image: url(fondotarjeta.jpg); 
+	background-image: url(/src/Fotos/fondotarjeta.jpg); 
 	color:#dfc161  ;
 	margin: 15px;
 	padding: 20px;
@@ -81,7 +81,7 @@ header .ocultar {
 	border-color: #796B07;
   }
   .tarjeta .atras {
-	background-image: url(tarjetaAtras.png);
+	background-image: url(/src/Fotos/tarjetaAtras.png);
 	color:#ddda14 ;
 	margin: 1px;
 	padding: 30px;
