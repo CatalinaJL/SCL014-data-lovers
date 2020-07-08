@@ -2,13 +2,12 @@ import data from './data/potter/potter.js';
 
 //import data from './data.js';
 
+let personajes = document.getElementById("gridDePersonajes");
+
 const dataPersonajes = (data) => {
    //console.log (data);
          for (let i=0; i<data.length; i++){
-
-
-        
-          personajes.innerHTML = `
+   personajes.innerHTML = `
          <div class="tarjeta">
          <div class="frente">
            
@@ -33,7 +32,7 @@ const dataPersonajes = (data) => {
   };
 
 
-  let personajes = document.getElementById("gridDePersonajes");
+ 
   let botonPersonajes= document.getElementById ("Personajes");
 
 
