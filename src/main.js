@@ -1,10 +1,5 @@
 //import { example } from './data.js';
 
-
-
-
-
-
 import data from './data/potter/potter.js';
 
 //import data from './data.js';
@@ -12,10 +7,6 @@ import data from './data/potter/potter.js';
 console.log(data);
 
 //primero voy a llamar todos los Id//
-
-//const dataTotal= data;   // variable primera que contiene la data//
-//const dataTotal= data; 
-//console.log (dataTotal);
 
 const harryBox = document.getElementById('root'); //variable que contiene a la ventana de persoanjes  que me voy a traer//
 
@@ -30,13 +21,8 @@ document.getElementById("start").addEventListener("click",(evento) => {
 
 })
 
-
 // tercero, veamos la data//
 const verData = (data) => {
-   // aqui me falta que se pueda leer la data dentro de mi funcion!!!//
-    //console.log ("hola locos!!");
-    //console.log (data);
-    //let character= data;
     let resultado= ''; // lo hago vacio para que entre la data
     for (let i=0; i<data.length; i++){
         console.log (data[i]);
@@ -61,7 +47,7 @@ const verData = (data) => {
 
     };
         return resultado;
-        data
+        
 };
     
     verData (data);
