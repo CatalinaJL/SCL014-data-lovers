@@ -8,122 +8,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Sahitya:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="contenedor">
       <header>
         <div class="logo">
-        <h1>BIENVENIDO A REVELIO</h1>
-        <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p>
-        <p>Elige una de las siguientes opciones para conocer más del mundo de Harry Potter:</p>
-        </div> 
+        <img src="/src/Fotos/logoSinFondo.png" alt="logo Wizard Unite" width="200px" height="150px">
+        </div>  
       </header>
-      <!--Bienvenida intro Harry Potter-->
-        
-  <div class="container">
-    <div class="cartaConBoleto" id="pag1">
-        
-            <div class="imagenTkt">
-                  <!--  <img src="imagen.png" alt=""> -->
-            </div>
-        
-          <input type="image" src="Fotos/Varitas más claras.png" class="start" id="start">Comenzar</button>
-        
-    </div>
-  </div>     <!--fin pagina introduccion-->        
 
-            <!-- aqui van mis filtros y muestro la data-->
-            <section class="containerHarry" id="pag2">
+<!--Inicio 1era Historia de Usuario-->
+<!--Bienvenida intro Harry Potter-->
+<div class="container"> 
+  <div class="cartaConBoleto" id="pag1">
+      <h1>BIENVENIDO A REVELIO</h1>
+      <br><br><br>
+      <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p> 
+      <p> Para iniciar tu aventura aprieta las varitas de abajo</p>
+      <input type="image" src="Fotos/Varitas más claras.png" class="start" id="start"></input>
+    </div>  
+  </div>     
+<!--fin pagina introduccion-->        
 
+<!-- Página 2 aqui van elecciones de data-->
+  <section class="containerHarry" id="pag2">
+    <h1>Elige que quieres conocer:</h1>
+    <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
+      <p>PERSONAJES</p>
+    <input type="image" src="Fotos/CASAS2.png" id="Casas" />
+      <p>CASAS</p>
+    <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
+      <p>VARITAS</p>
+  </section>  
 
-        <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
-        <p >PERSONAJES</p>
-        
-        
-        <input type="image" src="Fotos/CASAS2.png" id="Casas" />
-        <p>CASAS</p>
-         
-        <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
-        <p>VARITAS</p>
+<!-- Página 3 Personajes y Select para filtrar personajes-->
+  <section class="containerHarry" id="pag3">
+    <div class=" filtrosAplicar">
+      <div class="filtros">
+        <section id="input-personajes">
+            <select id="roles" >
+              <option>Seleccion de Personajes </option>
+                <option value="estudiantes">Estudiante</option>
+                <option value="profesores">Profesores</option>
+                <option value="otrosPersonajes">otros</option>
+            </select>
+  </section>
 
-              <div class=" filtrosAplicar">
-                  
-                  <div class="filtros">
-                      <h1 class="">FILTROS</h1>
-                      
-                      <section id="input-personajes">
-                        <select id="roles" >
-                          <option>Seleccion de Personajes </option>
-                          <option value="estudiantes">Estudiante</option>
-                          <option value="profesores">Profesores</option>
-                          <option value="otrosPersonajes">otros</option>
-                        </select>
+<!-- Página 4 Personajes y Select para filtrar personajes-->
+  <section class="containerHarry" id="pag4">
+    <select id="house" >
+      <option value="Gry">seleccione casas</option>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+    </select>
+  </section>
 
-                        <select id="house" >
-                          <option value="Gry">seleccione casas</option>
-                          <option value="Gryffindor">Gryffindor</option>
-                          <option value="Slytherin">Slytherin</option>
-                          <option value="Ravenclaw">Ravenclaw</option>
-                          <option value="Hufflepuff">Hufflepuff</option>
-                        </select>
+<!-- Página 5 Varitas y Select para filtrar personajes-->
+ <section class="containerHarry" id="pag5"> 
+    <select id="core" >
+      <option value="varitas">Seleccione Varitas</option>
+      <option value="phoenix feather">phoenix feather</option>
+      <option value="dragon heartstring">dragon heartstring</option>
+      <option value="unicorn tail-hair">unicorn tail-hair</option>
+    </select>
+  </section>
 
-                        <select id="core" >
-                          <option value="varitas">Seleccione Varitas</option>
-                          <option value="phoenix feather">phoenix feather</option>
-                          <option value="dragon heartstring">dragon heartstring</option>
-                          <option value="unicorn tail-hair">unicorn tail-hair</option>
-                        </select>
+  <!--cierre de filtros-->
 
-
-                      
-                      
-                  </div> <!--cierre de filtros-->
-                  
-    
-                </div> <!-- cierre de Filtros aplicar-->
-    
-                
-                    <div class="ventanaDePersonajes" id="root">   <!--aquí es donde saldra la data que me traje de JS-->
-                        
-                    </div>
+  <!--aquí es donde saldra la data que me traje de JS-->
+  <div class="ventanaDePersonajes" id="root">   
+  </div>
               
-              </section>               
+                           
          <!-- cierre de mi  section "containerHarry" -->
     
-      
-
-
-      
-     
-   
-
-        
-     
-
-    
-    
-    <footer>
-        <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
-        <p1> Catalina & Marcela "LABORATORIA"</p1>
-        <div class="redes-sociales">
-          <div class="contenedor-icono">
-            <a href="http://www.twitter.com" target="_blank" class="twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <div class="contenedor-icono">
-            <a href="http://www.facebook.com" target="_blank" class="facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-          <div class="contenedor-icono">
-            <a href="http://www.instagram.com" target="_blank" class="instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+<footer>
+  <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
+    <p1> Catalina & Marcela "LABORATORIA"</p1>
+      <div class="redes-sociales">
+        <div class="contenedor-icono">
+          <a href="http://www.twitter.com" target="_blank" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
-
-    </footer>
+        <div class="contenedor-icono">
+          <a href="http://www.facebook.com" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          </div>
+        <div class="contenedor-icono">
+          <a href="http://www.instagram.com" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+</footer>
     
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
 </html>
