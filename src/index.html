@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Sahitya:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
@@ -16,24 +17,90 @@
         <p>Elige una de las siguientes opciones para conocer más del mundo de Harry Potter:</p>
         </div> 
       </header>
+      <!--Bienvenida intro Harry Potter-->
+        
+  <div class="container">
+    <div class="cartaConBoleto" id="pag1">
+        
+            <div class="imagenTkt">
+                  <!--  <img src="imagen.png" alt=""> -->
+            </div>
+        
+            <button type="button" class="start" id="start">Comenzar</button>
+        
+    </div>
+  </div>     <!--fin pagina introduccion-->        
 
-      <input type="button"  id="Personajes" value="personajes"></input>
-      <section class="gridDePersonajes" id="gridDePersonajes">
+            <!-- aqui van mis filtros y muestro la data-->
+            <section class="containerHarry" id="pag2">
+
+
+              <input type="button"  id="Personajes" value="personajes"/>
+        <p >PERSONAJES</p>
+        
         
         <input type="image" src="Fotos/CASAS2.png" id="Casas" />
         <p>CASAS</p>
          
         <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
         <p>VARITAS</p>
+
+              <div class=" filtrosAplicar">
+                  
+                  <div class="filtros">
+                      <h1 class="">FILTROS</h1>
+                      
+                      <section id="input-personajes">
+                        <select id="roles" >
+                          <option>Seleccion de Personajes </option>
+                          <option value="estudiantes">Estudiante</option>
+                          <option value="profesores">Profesores</option>
+                          <option value="otrosPersonajes">otros</option>
+                        </select>
+
+                        <select id="house" >
+                          <option value="Gry">seleccione casas</option>
+                          <option value="Gryffindor">Gryffindor</option>
+                          <option value="Slytherin">Slytherin</option>
+                          <option value="Ravenclaw">Ravenclaw</option>
+                          <option value="Hufflepuff">Hufflepuff</option>
+                        </select>
+
+                        <select id="core" >
+                          <option value="varitas">Seleccione Varitas</option>
+                          <option value="phoenix feather">phoenix feather</option>
+                          <option value="dragon heartstring">dragon heartstring</option>
+                          <option value="unicorn tail-hair">unicorn tail-hair</option>
+                        </select>
+
+
+                      
+                      
+                  </div> <!--cierre de filtros-->
+                  
+    
+                </div> <!-- cierre de Filtros aplicar-->
+    
+                
+                    <div class="ventanaDePersonajes" id="root">   <!--aquí es donde saldra la data que me traje de JS-->
+                        
+                    </div>
+              
+              </section>               
+         <!-- cierre de mi  section "containerHarry" -->
+    
+      
+
+
+      
      
-      </section>
+   
 
-  
+        
+     
 
-    <div id="root"></div>
-    <p></p>
-    <script src="main.js" type="module"></script>
-
+    
+    
     <footer>
         <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
         <p1> Catalina & Marcela "LABORATORIA"</p1>
@@ -56,5 +123,7 @@
         </div>
 
     </footer>
+    
+    <script src="main.js" type="module"></script>
   </body>
 </html>

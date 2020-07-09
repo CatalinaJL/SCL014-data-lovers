@@ -1,40 +1,68 @@
+//import { example } from './data.js';
+
+
+
+
+
+
 import data from './data/potter/potter.js';
 
 //import data from './data.js';
 
-let personajes = document.getElementById("gridDePersonajes");
+console.log(data);
 
-const dataPersonajes = (data) => {
-   //console.log (data);
-         for (let i=0; i<data.length; i++){
-   personajes.innerHTML = `
-         <div class="tarjeta">
-         <div class="frente">
-           
-           <h1>${data.name}</h1>
-           <div class ="imagenPersonaje"><img src=${data.image}></div>
-        </div>
-        <div class="atras">
-           <div class="imagenJuego"><src=Fotos/logoSinFondo.png></div>
-            <p>   Specie: ${data.species}</p>
-            <p>   Gender: ${data.gender}</p>
-            <p>   House: ${data.house}</p>
-            <p>   Rol: ${data.rol}</p>
-            <p>   Actor: ${data.actor}</p>
-        </div>
-       
-     </div>
-        `;
-        
-        console.log (personajes);
-    //return personajes;
-   };
-  };
+//primero voy a llamar todos los Id//
+
+//const dataTotal= data;   // variable primera que contiene la data//
+//const dataTotal= data; 
+//console.log (dataTotal);
+
+const harryBox = document.getElementById('root'); //variable que contiene a la ventana de persoanjes  que me voy a traer//
+
+const harryType= document.getElementById('roles'); // variabke que contiene el primer filtro por roles en la pelicula//
+
+//vamos a mostar la pagina 1 y pag 2 por medio de un display (none y block)//
+
+document.getElementById("start").addEventListener("click",(evento) => {
+    evento.preventDefault();
+    document.getElementById("pag1").style.display="none";
+    document.getElementById("pag2").style.display="block";
+
+})
 
 
- 
-  let botonPersonajes= document.getElementById ("Personajes");
+// tercero, veamos la data//
+const verData = (data) => {
+   // aqui me falta que se pueda leer la data dentro de mi funcion!!!//
+    //console.log ("hola locos!!");
+    //console.log (data);
+    //let character= data;
+    let resultado= ''; // lo hago vacio para que entre la data
+    for (let i=0; i<data.length; i++){
+        console.log (data[i]);
+        resultado=harryBox.innerHTML += `
+        <div class="card">
+        <div class="front">
+         
+          <h1>${data[i].name}</h2>
+          <div class ="imagenes"><img src=${data[i].image}></div>
+          </div>
+          <div class="back">
+          
+          <p>   Specie: ${data[i].species}</p>
+          <p>  Gender: ${data[i].gender}</p>
+          <p>   House: ${data[i].house}</p>
+          <p>   Rol: ${data[i].rol}</p>
+         
+          
+          </div>
+          </div>
+          `
 
+    };
+        return resultado;
+        data
+};
+    
+    verData (data);
 
-  botonPersonajes.addEventListener("click",dataPersonajes);
- 

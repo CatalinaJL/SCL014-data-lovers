@@ -11,6 +11,11 @@ box-sizing: border-box;
 	max-width: 800px;
 	margin: auto;
 }
+
+#pag2{/*los id se llaman con #*/
+	display: none;
+  
+  }
 /*header*/
 
 header {
@@ -31,6 +36,7 @@ header .categorias {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
 /* filtros */
 header .ocultar {
     color: rgb(15, 15, 14);
