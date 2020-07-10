@@ -73,22 +73,19 @@ height: 10px;
 
 /*Tarjetas con personajes*/
 
-
  .card{
 	perspective: 700px;
-	position: relative;
+	position: center;
+	transform-box: center;
 	transform-style: preserve-3d;
 	transition: transform .3s linear;
+	
   }
   .card:hover .card {
 	transform: rotateY(180deg);
   }
  
-
- 
-  
-  .card .front {
-	
+  .card .front {	
 	margin: 15px;
 	padding: 20px;
 	text-align: center;
@@ -96,10 +93,11 @@ height: 10px;
 	border-style: solid;
 	border-color: #796B07;
 	backface-visibility: hidden;
+	max-width: 400px;
+	max-height: 400px;
   }
-  .card .back {
-	
 
+  .card .back {
 	margin: 15px;
 	padding: 20px;
 	text-align: center;
@@ -110,6 +108,9 @@ height: 10px;
 	position: absolute;
 	top: 0;
 	transform: rotateY(180deg);
+	background-image:url(/src/Fotos/tarjetaAtras.png);
+	max-width: 400px;
+	max-height: 400px;
   }
  
   

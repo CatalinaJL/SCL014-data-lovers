@@ -59,7 +59,7 @@ const verData = (data) => {
     resultado=harryBox.innerHTML += `
     <div class="card">
         <div class="front">
-          <div class ="imagenes"><img src=${data[i].image}></div>
+          <div class ="imagenes"><img src=${data[i].image} width="30%" height="30%"></div>
           <h1>${data[i].name}</h1>
         </div>
           
