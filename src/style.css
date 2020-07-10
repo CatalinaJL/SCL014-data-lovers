@@ -73,17 +73,55 @@ height: 10px;
 
 /*Tarjetas con personajes*/
 
-.card{
+
+ .card{
+	perspective: 700px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform .3s linear;
+  }
+  .card:hover .card {
+	transform: rotateY(180deg);
+  }
+ 
+
+ 
+  
+  .card .front {
+	
 	margin: 15px;
 	padding: 20px;
 	text-align: center;
 	border-radius: 9px;
 	border-style: solid;
 	border-color: #796B07;
-	max-width: 400px;
-	max-height: 400px;
+	backface-visibility: hidden;
+  }
+  .card .back {
 	
-}
+
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 9px;
+	border-style: solid;
+	border-color:  #796B07;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+  }
+ 
+  
+  .ventanaDePersonajes:hover .card {
+	transform: rotateY(180deg);
+  }
+
+
+
+
+
+  
 
 /* filtros */
 header .ocultar {
@@ -102,81 +140,8 @@ header .ocultar {
 
 
 
-/* TARJETAS*/
-.personajePelicula{
-	perspective: 700px;
-  }
-  
-  .personajePelicula,
-  .tarjeta {
-	margin: 2px;
-  }
-  .tarjeta {
-	position: relative;
-	transform-style: preserve-3d;
-	transition: transform .3s linear;
-  }
-  
-  .tarjeta .frente,
-  .tarjeta .atras {
-	margin: 15px;
-	padding: 20px;
-	backface-visibility: hidden;
-  }
-  
-  .tarjeta .frente {
-	background-image: url(/src/Fotos/fondotarjeta.jpg); 
-	color:#dfc161  ;
-	margin: 15px;
-	padding: 20px;
-	text-align: center;
-	border-radius: 9px;
-	border-style: solid;
-	border-color: #796B07;
-  }
-  .tarjeta .atras {
-	background-image: url(/src/Fotos/tarjetaAtras.png);
-	color:#ddda14 ;
-	margin: 1px;
-	padding: 30px;
-	text-align: left;
-	font-size: 18px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	border-radius: 9px;
-	border-style: solid;
-	border-color:  #796B07;
-  
-  }
-  .tarjeta .atras {
-	position: absolute;
-	top: 0;
-	transform: rotateY(180deg);
-  }
-  
-  .personajePelicula:hover .tarjeta {
-	transform: rotateY(180deg);
-  }
-  .ocultar {
-	display:block;
-  }
-  .mostrar {
-	display:none;
-  }
 
-  div .imageneslogo img {
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	border-style: solid;
-	border-color: #796B07;
-  }
- 
-  div .imagenJuego img {
-	width: 200px;
-	height: 100px;
   
-  }
-
 
 
 
