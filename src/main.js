@@ -24,16 +24,15 @@ document.getElementById("start").addEventListener("click",(evento) => {
     evento.preventDefault();
     document.getElementById("pag1").style.display="none";
     document.getElementById("pag2").style.display="block";
-
 })
 
 //Eventos para mostrar página "Personajes" (página3)
 document.getElementById("Personajes").addEventListener("click",(evento) => {
-    evento.preventDefault();
+    //evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag3").style.display="block";
+    document.getElementById("roles").style.display="block";
     verData (data);
-
 })
 
 //Eventos para mostrar página "Casas" (página4)
@@ -41,7 +40,7 @@ document.getElementById("Casas").addEventListener("click",(evento) => {
     evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag4").style.display="block";
-
+    document.getElementById("house").style.display="block";
 })
 
 //Eventos para mostrar página "Varitas" (página5)
@@ -49,7 +48,7 @@ document.getElementById("Varitas").addEventListener("click",(evento) => {
     evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag5").style.display="block";
-
+    document.getElementById("core").style.display="block";
 })
 
 // Función para mostrar la data//
@@ -57,14 +56,14 @@ const verData = (data) => {
     let resultado= ''; // lo hago vacio para que entre la data
     for (let i=0; i<data.length; i++){
         console.log (data[i]);
-        resultado=harryBox.innerHTML += `
-        <div class="card">
+    resultado=harryBox.innerHTML += `
+    <div class="card">
         <div class="front">
-         
-          <h1>${data[i].name}</h2>
           <div class ="imagenes"><img src=${data[i].image}></div>
-          </div>
-          <div class="back">
+          <h1>${data[i].name}</h1>
+        </div>
+          
+        <div class="back">
           
           <p>  Especie: ${data[i].species}</p>
           <p>  Género: ${data[i].gender}</p>
@@ -72,10 +71,9 @@ const verData = (data) => {
           <p>  Rol: ${data[i].rol}</p>
           <p>  Patronus: ${data[i].patronus}</p>
          
-          
-          </div>
-          </div>
-          `
+        </div>
+      </div>
+    `
 
     };
         return resultado;

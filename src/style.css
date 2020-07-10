@@ -37,17 +37,53 @@ height: 10px;
   
 }
 
-/* creamos contenedor para que centre las tarjetas y el cuerpo del header*/
-.containerHarry {
-	width: 90%;
-	max-width: 800px;
-	margin: auto;
+#roles{
+	display: none;
 }
 
 
-/*header*/
+#house{
+	display:none;
+}
+
+#core{
+	display:none;
+}
 
 
+/* creamos contenedor para que centre las tarjetas y el cuerpo del header*/
+.containerHarry {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	background-image: url(/src/Fotos/fondotarjeta.jpg);
+	display: block;
+}
+
+/* Container donde se desplazara tarjeta de personajes*/
+.ventanaDePersonajes{
+	background-image: url(/src/Fotos/fondotarjeta.jpg);
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	display:block;
+}
+
+/*Tarjetas con personajes*/
+
+.card{
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
+	max-width: 400px;
+	max-height: 400px;
+	
+}
 
 /* filtros */
 header .ocultar {
