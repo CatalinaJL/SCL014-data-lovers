@@ -26,9 +26,12 @@ p {
 }
 
 /* Página bienvenida*/
-.logo {
-width: 10px;
-height: 10px;
+
+
+.logo{
+    height: 5%;
+    width: 5%;
+    margin-top: 1%;
 }
 /* 2° Página/*los id se llaman con #*/
 
@@ -57,69 +60,92 @@ height: 10px;
 	max-width: 800px;
 	margin: auto;
 	text-align: center;
-	background-image: url(/src/Fotos/fondotarjeta.jpg);
-	display: block;
+	background-color: lightcoral;
+	
 }
 
+
 /* Container donde se desplazara tarjeta de personajes*/
-.ventanaDePersonajes{
-	background-image: url(/src/Fotos/fondotarjeta.jpg);
+
+
+.ventanaDePersonajes {
+	display:block;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 100%;
 	max-width: 800px;
 	margin: auto;
 	text-align: center;
-	display:block;
-}
+	background-color: lawngreen;
+	padding: 15px;
+  }
 
-/*Tarjetas con personajes*/
+/* aqui encontre la forma de poner el tamaño de las imagenes de las tarjetas sin ocupar el JS*/
+  div .imagenes img {
+	width: 250px;
+	height: 280px;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
+  }
+  
 
- .card{
+
+  /* tarjetas front y back*/
+.card{
 	perspective: 700px;
-	position: center;
-	transform-box: center;
+  }
+  
+  .card,
+  .cardFull {
+	margin: 100px;
+  }
+  .cardFull {
+	position: relative;
 	transform-style: preserve-3d;
 	transition: transform .3s linear;
-	
   }
-  .card:hover .card {
-	transform: rotateY(180deg);
+  
+  .cardFull .front,
+  .cardFull .back {
+	margin: 15px;
+	padding: 20px;
+	backface-visibility: hidden;
   }
- 
-  .card .front {	
+  
+  .cardFull .front {
+	background-color: #1da1f2; 
+	color:#dfc161  ;
 	margin: 15px;
 	padding: 20px;
 	text-align: center;
 	border-radius: 9px;
 	border-style: solid;
 	border-color: #796B07;
-	backface-visibility: hidden;
-	max-width: 400px;
-	max-height: 400px;
   }
-
-  .card .back {
-	margin: 15px;
-	padding: 20px;
-	text-align: center;
+  .cardFull .back {
+	background-color: #c13584;;
+	color:#ddda14 ;
+	margin: 1px;
+	padding: 30px;
+	text-align: left;
+	font-size: 18px;
+	
 	border-radius: 9px;
 	border-style: solid;
 	border-color:  #796B07;
-	backface-visibility: hidden;
+  
+  }
+  .cardFull .back {
 	position: absolute;
 	top: 0;
 	transform: rotateY(180deg);
-	background-image:url(/src/Fotos/tarjetaAtras.png);
-	max-width: 400px;
-	max-height: 400px;
   }
- 
   
-  .ventanaDePersonajes:hover .card {
+  .card:hover .cardFull {
 	transform: rotateY(180deg);
   }
-
-
-
+ 
 
 
   
@@ -143,6 +169,26 @@ header .ocultar {
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

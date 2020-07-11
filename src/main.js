@@ -58,21 +58,24 @@ const verData = (data) => {
         console.log (data[i]);
     resultado=harryBox.innerHTML += `
     <div class="card">
-        <div class="front">
-          <div class ="imagenes"><img src=${data[i].image} width="30%" height="30%"></div>
-          <h1>${data[i].name}</h1>
-        </div>
+        <div class= "cardFull">
+         <div class="front">
           
-        <div class="back">
+           <div class ="imagenes"><img src=${data[i].image} ></div> 
+           <h1>${data[i].name}</h1>
+         </div>
           
-          <p>  Especie: ${data[i].species}</p>
-          <p>  Género: ${data[i].gender}</p>
-          <p>  Casa: ${data[i].house}</p>
-          <p>  Rol: ${data[i].rol}</p>
-          <p>  Patronus: ${data[i].patronus}</p>
+         <div class="back">
+          
+           <p>  Especie: ${data[i].species}</p>
+           <p>  Género: ${data[i].gender}</p>
+           <p>  Casa: ${data[i].house}</p>
+           <p>  Rol: ${data[i].rol}</p>
+           <p>  Patronus: ${data[i].patronus}</p>
          
-        </div>
-      </div>
+          </div>
+       </div>
+    </div>
     `
 
     };
