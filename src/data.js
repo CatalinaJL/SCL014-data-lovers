@@ -1,6 +1,25 @@
-/*import data from './data/potter/potter.js';
+import data from './data/potter/potter.js';
 
-const dataHP= data; 
+const students = data.filter(function(data){
+   return data.hogwartsStudent === true;
+  });
+  export const studentsHogwarts= students.map(function(data){
+   return data.name;
+  })
+
+
+export const staff= data.filter(function(data){
+return data.hogwartsStaff === true;
+});
+//console.log(staff)
+//export const staffHogwarts = staff.map(function(data){
+  // return data.name;
+//}) 
+//console.log(staffHogwarts)
+  //console.log(students);
+//console.log(studentsHogwarts);
+
+/*const dataHP= data; 
 console.log(dataHP);
 
 const mainAtributtes= {
@@ -42,6 +61,7 @@ export const example = () => 'example';
 export default mainAtributtes; 
 
 export default fullNames;
-
-const dataHP = () => 'OMG';
 */
+//const dataHP = () => 'OMG';
+//export default studentsHogwarts; 
+//export const studentsHogwarts = () => 'example';

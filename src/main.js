@@ -1,4 +1,4 @@
-//import { example } from './data.js';
+import { staff } from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -70,7 +70,6 @@ const verData = (data) => {
            <p>  Especie: ${data[i].species}</p>
            <p>  Género: ${data[i].gender}</p>
            <p>  Casa: ${data[i].house}</p>
-           <p>  Rol: ${data[i].rol}</p>
            <p>  Patronus: ${data[i].patronus}</p>
          
           </div>
@@ -84,4 +83,40 @@ const verData = (data) => {
 };
     
    // verData (data);
+   /*const students = data.filter(function(data){
+    return data.hogwartsStudent === true;
+   });
+  const studentsHogwarts= students.map(function(data){
+    return data.name;
+   });
+
+   console.log(students);
+   */
+// Ver data 
+ //console.log(studentsHogwarts);
+//Para ver filtro Staff Hogwarts
+document.getElementById("Profesores").addEventListener("click",(evento)=> {
+    let resultado1= '';
+    let hogwarts = staff; 
+    for (let i=0; i<hogwarts.length; i++){
+        console.log (hogwarts[i]);
+    resultado1 = harryBox.innerHTML= `
+    <div class = "card"> 
+        <div class = "cardFull"> 
+            <div class = "front">
+                <div class = "imagenes"> <img src = ${hogwarts[i].image}> </div> 
+                <h1>${hogwarts[i].name}</h1>
+            </div>
+            <div class ="back"> 
+                <p>  Especie: ${hogwarts[i].species}</p>
+                <p>  Género: ${hogwarts[i].gender}</p>
+                <p>  Casa: ${hogwarts[i].house}</p>
+                <p>  Patronus: ${hogwarts[i].patronus}</p>
+            </div>
+        </div>
+    </div>
+    ` 
+    };
+    return resultado1
+}); 
 
