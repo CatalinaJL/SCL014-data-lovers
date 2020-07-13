@@ -1,37 +1,30 @@
 import data from './data/potter/potter.js';
 
-const students = data.filter(function(data){
+export const students = data.filter(function(data){
    return data.hogwartsStudent === true;
   });
+
+  console.log(students);
+
   export const studentsHogwarts= students.map(function(data){
    return data.name;
   })
-
+  //console.log(studentsHogwarts);
 
 export const staff= data.filter(function(data){
 return data.hogwartsStaff === true;
 });
-//console.log(staff)
+console.log(staff)
 //export const staffHogwarts = staff.map(function(data){
   // return data.name;
 //}) 
 //console.log(staffHogwarts)
-  //console.log(students);
+//console.log(students);
 //console.log(studentsHogwarts);
 
 /*const dataHP= data; 
 console.log(dataHP);
 
-const mainAtributtes= {
-   showPepito (){
-      for (let i=0 ; i<data.length; i++);
-      const fullNames = dataHp.filter(datos=>  `${datos.name} ${datos.species}`);
-
-      console.log (fullNames); 
-      
-   }
-   
-}
 console.log(mainAtributtes) 
 
 const students = dataHP.filter(hogwarts => (hogwarts.name !==""));
