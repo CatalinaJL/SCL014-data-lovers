@@ -1,4 +1,4 @@
-import { staff,students} from './data.js';
+import { staff,students,} from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -82,63 +82,21 @@ const verData = (data) => {
         
 };
     
-   // verData (data);
-   /*const students = data.filter(function(data){
-    return data.hogwartsStudent === true;
-   });
-  const studentsHogwarts= students.map(function(data){
-    return data.name;
-   });
 
-   console.log(students);
-   */
-// Ver data 
- 
-//Para ver filtro Staff Hogwarts
-//document.getElementById("Profesores").addEventListener("click",(evento)=> {
- //   let resultado1= '';
- //   let hogwarts = staff; 
- //   for (let i=0; i<hogwarts.length; i++){
- //       console.log (hogwarts[i]);
- //   resultado1 = harryBox.innerHTML= `
- //   <div class = "card"> 
- //       <div class = "cardFull"> 
- //           <div class = "front">
- //               <div class = "imagenes"> <img src = ${hogwarts[i].image}> </div> 
-//                <h1>${hogwarts[i].name}</h1>
- //           </div>
- //           <div class ="back"> 
-  //              <p>  Especie: ${hogwarts[i].species}</p>
- //               <p>  Género: ${hogwarts[i].gender}</p>
- //               <p>  Casa: ${hogwarts[i].house}</p>
-//                <p>  Patronus: ${hogwarts[i].patronus}</p>
- //           </div>
-  //      </div>
-  //  </div>
- //   ` 
-  //  };
-  //  return resultado1
-//}); 
-
-//console.log(studentsHogwarts);
 
 console.log(students);
 console.log(staff)
 
 
-
-
-
-
 const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
-
+ 
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
 
     console.log(staff); 
 
     harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-
+     
      for (let i=0; i<staff.length; i++){
      
         harryBox.innerHTML += `
@@ -165,40 +123,45 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
       </div>
         `
     };
-})
 
-const harryEstudent = document.getElementById('Personajes');
+    
+});
+
+
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
 
-    console.log(students); 
+  console.log(students); 
 
-    harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
+  harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
 
-     for (let i=0; i<students.length; i++){
-     
-        harryBox.innerHTML += `
-        <div class="card">
-        <div class= "cardFull">  
-        <div class="front">
-          
-        <div class ="imagenes"><img src=${students[i].image} ></div> 
-        <h1>${students[i].name}</h1>
-      </div>
+   for (let i=0; i<students.length; i++){
+   
+      harryBox.innerHTML += `
+      <div class="card">
+      <div class= "cardFull">  
+      <div class="front">
+        
+      <div class ="imagenes"><img src=${students[i].image} ></div> 
+      <h1>${students[i].name}</h1>
+    </div>
 
-          <div class="back">
-          
-           <p>  Especie: ${students[i].species}</p>
-           <p>  Género: ${students[i].gender}</p>
-           <p>  Casa: ${students[i].house}</p>
-           <p>  Patronus: ${students[i].patronus}</p>
-         
-          </div>
-
-
-
+        <div class="back">
+        
+         <p>  Especie: ${students[i].species}</p>
+         <p>  Género: ${students[i].gender}</p>
+         <p>  Casa: ${students[i].house}</p>
+         <p>  Patronus: ${students[i].patronus}</p>
+       
         </div>
+
+
+
       </div>
-        `
-    };
+    </div>
+      `
+  };
 })
+
+
+

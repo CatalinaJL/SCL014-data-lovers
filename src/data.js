@@ -5,16 +5,27 @@ export const students = data.filter(function(data){
   });
 
   console.log(students);
+  
+  const filterPokemon = (DATA, condition) => { //data ? 
+    let filteredPoke = DATA.filter(element => { // filter recorre y arroja un nuevo array 
+      
+      return element.type.includes(condition)// includes funciona con booleanos compara si la condicion se cumple
+    })
+    return filteredPoke;
+  };
+  
 
-  export const studentsHogwarts= students.map(function(data){
-   return data.name;
-  })
+  
+  //export const studentsHogwarts= students.map(function(data){
+  // return data.name;
+  //})
   //console.log(studentsHogwarts);
 
 export const staff= data.filter(function(data){
 return data.hogwartsStaff === true;
+
 });
-console.log(staff)
+console.log(staff);
 //export const staffHogwarts = staff.map(function(data){
   // return data.name;
 //}) 
