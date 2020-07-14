@@ -113,7 +113,7 @@ p {
   }
   
   .cardFull .front {
-	background-color: #1da1f2; 
+	background-image: url(/src/Fotos/fondotarjeta.jpg); 
 	color:#dfc161  ;
 	margin: 15px;
 	padding: 20px;
@@ -123,10 +123,10 @@ p {
 	border-color: #796B07;
   }
   .cardFull .back {
-	background-color: #c13584;;
+	background-image: url(/src/Fotos/fondotarjeta.jpg);
 	color:#ddda14 ;
-	margin: 1px;
-	padding: 30px;
+	margin: 15px;
+	padding: 20px;
 	text-align: left;
 	font-size: 18px;
 	

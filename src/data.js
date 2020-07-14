@@ -47,6 +47,31 @@ export const deathEaters= others.filter(function(others){
  
  console.log(deathEaters); 
  
+// Filtro Casas Hogwarts
+
+const gryffindor = data.filter(function(data){
+  return data.house === "Gryffindor"
+})
+
+console.log(gryffindor);
+
+const hufflepuf = data.filter(function(data){
+  return data.house === "Hufflepuff"
+})
+
+console.log(hufflepuf);
+
+const ravenclaw = data.filter(function(data){
+  return data.house === "Ravenclaw"
+})
+
+console.log(ravenclaw);
+
+const slytherin = data.filter(function(data){
+  return data.house === "Slytherin"
+})
+
+console.log(slytherin);
 
 //export const staffHogwarts = staff.map(function(data){
   // return data.name;

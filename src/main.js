@@ -86,6 +86,7 @@ const verData = (data) => {
 // Declarar variable de select de página de personajes
 const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
  
+
 // Evento para que cada opción de select cargue personajes filtrados
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        console.log(staff); 
@@ -204,10 +205,8 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
         };
      }
          
-     }
+     } 
      
-
-    
 });
 
 
