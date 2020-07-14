@@ -6,14 +6,7 @@ export const students = data.filter(function(data){
 
   console.log(students);
   
-  const filterPokemon = (DATA, condition) => { //data ? 
-    let filteredPoke = DATA.filter(element => { // filter recorre y arroja un nuevo array 
-      
-      return element.type.includes(condition)// includes funciona con booleanos compara si la condicion se cumple
-    })
-    return filteredPoke;
-  };
-  
+ 
 
   
   //export const studentsHogwarts= students.map(function(data){

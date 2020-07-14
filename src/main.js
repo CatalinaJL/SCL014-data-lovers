@@ -94,26 +94,29 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
        
 
     console.log(staff); 
-
+    console.log(harryType.value);
     harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
      
-     for (let i=0; i<staff.length; i++){
+    if ( harryType.value === "hogwartsStaff"){
+      let harryType1=staff;
+
+      for (let i=0; i<harryType1.length; i++){
      
         harryBox.innerHTML += `
         <div class="card">
         <div class= "cardFull">  
         <div class="front">
           
-        <div class ="imagenes"><img src=${staff[i].image} ></div> 
-        <h1>${staff[i].name}</h1>
+        <div class ="imagenes"><img src=${harryType1[i].image} ></div> 
+        <h1>${harryType1[i].name}</h1>
       </div>
 
           <div class="back">
           
-           <p>  Especie: ${staff[i].species}</p>
-           <p>  Género: ${staff[i].gender}</p>
-           <p>  Casa: ${staff[i].house}</p>
-           <p>  Patronus: ${staff[i].patronus}</p>
+           <p>  Especie: ${harryType1[i].species}</p>
+           <p>  Género: ${harryType1[i].gender}</p>
+           <p>  Casa: ${harryType1[i].house}</p>
+           <p>  Patronus: ${harryType1[i].patronus}</p>
          
           </div>
 
@@ -124,44 +127,43 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
         `
     };
 
+
+     } else if(harryType.value === "hogwartsStudent") {
+      let harryType2=students;
+
+      for (let i=0; i<harryType2.length; i++){
+     
+        harryBox.innerHTML += `
+        <div class="card">
+        <div class= "cardFull">  
+        <div class="front">
+          
+        <div class ="imagenes"><img src=${harryType2[i].image} ></div> 
+        <h1>${harryType2[i].name}</h1>
+      </div>
+
+          <div class="back">
+          
+           <p>  Especie: ${harryType2[i].species}</p>
+           <p>  Género: ${harryType2[i].gender}</p>
+           <p>  Casa: ${harryType2[i].house}</p>
+           <p>  Patronus: ${harryType2[i].patronus}</p>
+         
+          </div>
+
+
+
+        </div>
+      </div>
+        `
+    };
+
+
+
+     }
+     
+
     
 });
-
-
-harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
-       
-
-  console.log(students); 
-
-  harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-
-   for (let i=0; i<students.length; i++){
-   
-      harryBox.innerHTML += `
-      <div class="card">
-      <div class= "cardFull">  
-      <div class="front">
-        
-      <div class ="imagenes"><img src=${students[i].image} ></div> 
-      <h1>${students[i].name}</h1>
-    </div>
-
-        <div class="back">
-        
-         <p>  Especie: ${students[i].species}</p>
-         <p>  Género: ${students[i].gender}</p>
-         <p>  Casa: ${students[i].house}</p>
-         <p>  Patronus: ${students[i].patronus}</p>
-       
-        </div>
-
-
-
-      </div>
-    </div>
-      `
-  };
-})
-
 
 
