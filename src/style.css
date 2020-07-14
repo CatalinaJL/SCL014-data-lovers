@@ -60,7 +60,7 @@ p {
 	max-width: 800px;
 	margin: auto;
 	text-align: center;
-	background-color: lightcoral;
+	background-image: url(/src/Fotos/fondotarjeta.jpg);
 	
 }
 
@@ -76,7 +76,6 @@ p {
 	max-width: 800px;
 	margin: auto;
 	text-align: center;
-	background-color: lawngreen;
 	padding: 15px;
   }
 

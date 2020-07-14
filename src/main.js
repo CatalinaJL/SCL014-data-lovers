@@ -1,4 +1,4 @@
-import { staff,students,} from './data.js';
+import { staff,students,phoenixOrder,deathEaters} from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -83,57 +83,40 @@ const verData = (data) => {
 };
     
 
-
-console.log(students);
-console.log(staff)
-
-
+// Declarar variable de select de página de personajes
 const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
  
+// Evento para que cada opción de select cargue personajes filtrados
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
-       
-
-    console.log(staff); 
-    console.log(harryType.value);
-    harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-     
+       console.log(staff); 
+       console.log(harryType.value);
+       harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
+    // Para cargar Staff Colegio 
     if ( harryType.value === "hogwartsStaff"){
       let harryType1=staff;
-
       for (let i=0; i<harryType1.length; i++){
-     
-        harryBox.innerHTML += `
-        <div class="card">
-        <div class= "cardFull">  
-        <div class="front">
-          
-        <div class ="imagenes"><img src=${harryType1[i].image} ></div> 
-        <h1>${harryType1[i].name}</h1>
-      </div>
-
-          <div class="back">
-          
-           <p>  Especie: ${harryType1[i].species}</p>
-           <p>  Género: ${harryType1[i].gender}</p>
-           <p>  Casa: ${harryType1[i].house}</p>
-           <p>  Patronus: ${harryType1[i].patronus}</p>
-         
-          </div>
-
-
-
+     harryBox.innerHTML += `
+     <div class="card">
+     <div class= "cardFull">  
+     <div class="front">
+          <div class ="imagenes"><img src=${harryType1[i].image} ></div> 
+          <h1>${harryType1[i].name}</h1>
+     </div>
+     <div class="back">
+          <p>  Especie: ${harryType1[i].species}</p>
+          <p>  Género: ${harryType1[i].gender}</p>
+          <p>  Casa: ${harryType1[i].house}</p>
+          <p>  Patronus: ${harryType1[i].patronus}</p>
+     </div>
         </div>
-      </div>
+     </div>
         `
     };
-
-
-     } else if(harryType.value === "hogwartsStudent") {
-      let harryType2=students;
-
-      for (let i=0; i<harryType2.length; i++){
-     
-        harryBox.innerHTML += `
+    // Para cargar Estudiantes
+    } else if(harryType.value === "hogwartsStudent") {
+        let harryType2=students;
+        for (let i=0; i<harryType2.length; i++){
+      harryBox.innerHTML += `
         <div class="card">
         <div class= "cardFull">  
         <div class="front">
@@ -160,6 +143,67 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
 
 
 
+     } else if (harryType.value === 'OrderofthePhoenix') {
+        let harryType3=phoenixOrder;
+  
+        for (let i=0; i<harryType3.length; i++){
+       
+          harryBox.innerHTML += `
+          <div class="card">
+          <div class= "cardFull">  
+          <div class="front">
+            
+          <div class ="imagenes"><img src=${harryType3[i].image} ></div> 
+          <h1>${harryType3[i].name}</h1>
+        </div>
+  
+            <div class="back">
+            
+             <p>  Especie: ${harryType3[i].species}</p>
+             <p>  Género: ${harryType3[i].gender}</p>
+             <p>  Casa: ${harryType3[i].house}</p>
+             <p>  Patronus: ${harryType3[i].patronus}</p>
+           
+            </div>
+  
+  
+  
+          </div>
+        </div>
+          `
+      };
+  
+         
+     } else { harryType.value === "Mortífagos"; {
+         let harryType4= deathEaters
+         for (let i=0; i<harryType4.length; i++){
+       
+            harryBox.innerHTML += `
+            <div class="card">
+            <div class= "cardFull">  
+            <div class="front">
+              
+            <div class ="imagenes"><img src=${harryType4[i].image} ></div> 
+            <h1>${harryType4[i].name}</h1>
+          </div>
+    
+              <div class="back">
+              
+               <p>  Especie: ${harryType4[i].species}</p>
+               <p>  Género: ${harryType4[i].gender}</p>
+               <p>  Casa: ${harryType4[i].house}</p>
+               <p>  Patronus: ${harryType4[i].patronus}</p>
+             
+              </div>
+    
+    
+    
+            </div>
+          </div>
+            `
+        };
+     }
+         
      }
      
 

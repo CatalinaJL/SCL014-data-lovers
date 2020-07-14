@@ -21,18 +21,32 @@ console.log(staff);
   
   console.log(others);
 
-// Filtro para tener array de Ministerio de Magia
-export const ministryOfMagic= others.filter(function(others){
-/* if (others.name === "Sirius Black");{
-
+// Filtro para tener array de Orden del Fénix
+export const phoenixOrder= others.filter(function(others){
+ if (others.name === "Arthur Weasley") {
+   return others.name === "Arthur Weasley";
+ } if (others.name === "Sirius Black") {
+   return others.name === "Sirius Black"
+ } if (others.name === "Kingsley Shacklebolt") {
+  return others.name === "Kingsley Shacklebolt"; 
  } 
-else if(others.name === "Remus Lupin") {
+})
 
-} else if( others.name === "Arthur Weasley")
-*/
-return others.name === "Sirius Black" && others.name === "Remus Lupin";
-}); 
-console.log(ministryOfMagic); 
+console.log(phoenixOrder); 
+
+// Filtro para tener array de Mortífagos
+export const deathEaters= others.filter(function(others){
+  if (others.name === "Lord Voldemort" ) {
+    return others.name === "Lord Voldemort" ;
+  }if (others.name === "Bellatrix Lestrange" ) {
+    return others.name === "Bellatrix Lestrange" ;
+  } if (others.name === "Lucius Malfoy") {
+    return others.name === "Lucius Malfoy";
+  }  
+ })
+ 
+ console.log(deathEaters); 
+ 
 
 //export const staffHogwarts = staff.map(function(data){
   // return data.name;
