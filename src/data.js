@@ -1,24 +1,39 @@
 import data from './data/potter/potter.js';
 
+//Filtro para tener array de Estudiantes
 export const students = data.filter(function(data){
    return data.hogwartsStudent === true;
   });
 
   console.log(students);
   
- 
-
-  
-  //export const studentsHogwarts= students.map(function(data){
-  // return data.name;
-  //})
-  //console.log(studentsHogwarts);
-
+ // Filtro para tener array de Staff
 export const staff= data.filter(function(data){
 return data.hogwartsStaff === true;
-
 });
+
 console.log(staff);
+
+// Filtro para tener array de Ministerio de Magia y Lado Tenebroso Juntos 
+ const others= data.filter(function(data){
+  return data.hogwartsStaff !== true && data.hogwartsStudent !== true;
+  });
+  
+  console.log(others);
+
+// Filtro para tener array de Ministerio de Magia
+export const ministryOfMagic= others.filter(function(others){
+/* if (others.name === "Sirius Black");{
+
+ } 
+else if(others.name === "Remus Lupin") {
+
+} else if( others.name === "Arthur Weasley")
+*/
+return others.name === "Sirius Black" && others.name === "Remus Lupin";
+}); 
+console.log(ministryOfMagic); 
+
 //export const staffHogwarts = staff.map(function(data){
   // return data.name;
 //}) 
