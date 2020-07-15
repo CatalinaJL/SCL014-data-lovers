@@ -12,8 +12,7 @@
   <body>
       <header>
         <div class="logo">
-          
-        <img src="/src/Fotos/logoSinFondo.png" alt="logo Wizard Unite" width="350px" height="250px">
+        <img src="/src/Fotos/WU.png" alt="logo Wizard Unite">
         </div>  
         
       </header>
@@ -23,7 +22,7 @@
 <div class="container"> 
   <div class="cartaConBoleto" id="pag1">
       <h1>BIENVENIDO A REVELIO</h1>
-      <br><br><br>
+      <br>
       <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p> 
       <p> Para iniciar tu aventura aprieta las varitas de abajo</p>
       <input type="image" src="Fotos/Varitas más claras.png" class="start" id="start"></input>
@@ -34,17 +33,19 @@
 <!-- Página 2 aqui van elecciones de data-->
   <section class="containerHarry" id="pag2">
     <h1>Elige que quieres conocer:</h1>
-    <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
-      <p>PERSONAJES</p>
-    <input type="image" src="Fotos/CASAS2.png" id="Casas" />
-      <p>CASAS</p>
-    <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
-      <p>VARITAS</p>
+        <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
+        <p>PERSONAJES</p>
+        <input type="image" src="Fotos/CASAS2.png" id="Casas" />  
+        <p>CASAS</p>
+        <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
+        <p>VARITAS</p>
   </section>  
 
 <!-- Página 3 Personajes y Select para filtrar personajes-->
   <section class="containerHarry1" id="pag3">
-    
+    <h1>PERSONAJES</h1>
+    <p>¿Quieres saber quienes son los personajes de esta mágica aventura? </p>
+    <p>Posicionate en una de las cartas y ve sus principales datos.</p>
     <select id="roles" class="roles" >
         <option value="todos">Selecciona Rol</option> 
         <option value="hogwartsStudent" id= "Estudiantes">Estudiantes </option>
@@ -57,7 +58,10 @@
 <!-- Página 4 Casas y Select para filtrar personajes por casas-->
 
   <section class="containerHarry2" id="pag4">
-    
+    <h1>Casas de Hogwarts</h1>
+    <p>La Escuela Hogwarts de Magía y Hechiceria se compone de 4 casas, Gryffindor, Ravenclaw, Hufflepuff y Slytherin.</p>
+    <p>Al inicio de cada año escolar, los alumnos que inician sus clases en Hogwarts son seleccionados en cada casa por el Sombrero Seleccionador.</p>
+    <p>Cada casa de Hogwarts tiene caracteristicas distintas, con las que el Sombrero Seleccionador basa su decisión.¿Quieres saber cuales son ellas? Haz click en el escudo de cada casa para saber. </p>
     <select id="house" >
        <option value="Gry"> Casas </option>
         <option value="Gryffindor">Gryffindor</option>
@@ -72,7 +76,9 @@
 
 <!-- Página 5 Varitas y Select para filtrar personajes por varitas-->
  <section class="containerHarry3" id="pag5"> 
-  
+  <h1>Varitas</h1>
+  <p>Las varitas son uno de los bienes más preciados por los magos en el mundo mágico. A través de ellas pueden canalizar sus poderes para lograr hechizos y encantamientos. Cada varita tiene caracteristicas importantes, como lo son la madera, el centro y la longitud.</p>
+  <p>¿Quieres saber quienes comparten elementos en sus varitas? Elige que centro quieres conocer:</p>
     <select id="core" >
       
       <option value="varitas"> Varitas </option>

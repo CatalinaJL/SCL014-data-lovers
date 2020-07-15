@@ -55,10 +55,6 @@ export const gryffindor = data.filter(function(data){
 
 console.log(gryffindor);
 
-
-
-
-
 export const hufflepuf = data.filter(function(data){
   return data.house === "Hufflepuff"
 })

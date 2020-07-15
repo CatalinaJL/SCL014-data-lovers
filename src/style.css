@@ -26,21 +26,58 @@ p {
 }
 
 /* Página bienvenida*/
-
-
 .logo{
-    height: 5%;
-    width: 5%;
+    height: 100;
+    width: 250;
     margin-top: 1%;
 }
-/* 2° Página/*los id se llaman con #*/
+/* Display contenedor pantallas/*los id se llaman con #*/
 
 #pag2,#pag3, #pag4, #pag5{			
 	display: none;
   
 }
 
+/*Forma botones con imagenes */
 
+#start {
+	margin: 15px;
+	padding: 20px;
+	text-align:center ;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;	
+} 
+
+#Personajes, #Casas, #Varitas {
+	margin: 15px;
+	padding: 20px;
+	text-align:center ;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
+}
+
+/*Para que botones de Personajes, Casas y Varitas esten uno al lado del otro
+
+.columns{
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+}
+
+.row{
+	margin: 0 -5px;
+}
+
+.row:after{
+	content: '';
+	display: table;
+	clear:both;
+}
+*/
+
+/*Selects de cada página */
 
 #roles{
 	display: none;
@@ -63,8 +100,8 @@ p {
 	background-image: url(/src/Fotos/fondotarjeta.jpg);
 	margin: auto;
 	display: flex;
-	align-items: center;
-		text-align: center;
+	flex-direction: row;
+	
 		
 }
 
