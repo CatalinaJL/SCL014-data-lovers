@@ -1,4 +1,4 @@
-import { staff,students,phoenixOrder,deathEaters,gryffindor,slytherin,ravenclaw,hufflepuf, phoenixFeather,dragonHeartstring,unicornTailHair} from './data.js';
+import { staff,students,phoenixOrder,deathEaters,gryffindor,slytherin,ravenclaw,hufflepuf,wandsHarryPotter, phoenixFeather,dragonHeartstring,unicornTailHair} from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -94,11 +94,12 @@ const verData = (data) => {
         
 };
     
-// Declarar variable de select de página de personajes
+// Declarar variable de selects de páginas de personajes, casas y varitas
 const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
 const harryHouse = document.getElementById('house');
 const harryCore = document.getElementById('core');
 
+// Función para mostrar información relacionada al select de personajes
 const primerMono = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
@@ -121,52 +122,44 @@ const primerMono = (infor) =>{
    }; 
    
 }
- 
+
+// Función para mostrar información relacionada al select de Casas
 const segundoMono = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
     <div class= "cardFull">  
-    <div class="front">
+      <div class="front">
          <div class ="imagenes"><img src=${infor[i].image} ></div> 
          <h1>${infor[i].name}</h1>
-    </div>
-    <div class="back">
-         
-         <p>  Casa: ${infor[i].house}</p>
-         
-    </div>
-       </div>
+      </div>
+      </div>
     </div>
        `
    }; 
    
 }
+//Función para mostrar información de select de Varitas 
+
 const tercerMono = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
     <div class= "cardFull">  
-    <div class="front">
+      <div class="front">
          <div class ="imagenes"><img src=${infor[i].image} ></div> 
          <h1>${infor[i].name}</h1>
+      </div>
     </div>
-    <div class="back">
-         <p>  Especie: ${infor[i].species}</p>
-         <p>  Casa: ${infor[i].house}</p>
-         <p>  Patronus: ${infor[i].patronus}</p>
-         
-    </div>
-       </div>
     </div>
        `
    }; 
    
 }
  
-// Evento para que cada opción de select cargue personajes filtrados
+// Evento para que cada opción de select de página personajes cargue personajes filtrados
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
        harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
@@ -189,7 +182,8 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
        };
 
       });
-// Evento para que cada opción de select cargue casas  filtrados
+
+// Evento para que cada opción de select de página de Casas cargue casas  filtrados
 harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
         harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
@@ -213,13 +207,13 @@ harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento
  
        });
 
-// Evento para que cada opción de select cargue varitas
+// Evento para que cada opción de select de Página Varitas cargue varitas
 harryCore.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
   harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
    // Para cargar data en menu Todos
   if ( harryCore.value === "varitas"){
-   let harryCore0=data.wand.core;
+   let harryCore0= wandsHarryPotter;
    tercerMono(harryCore0);
   } else if ( harryCore.value === "phoenix feather"){
    let harryCore1=phoenixFeather;

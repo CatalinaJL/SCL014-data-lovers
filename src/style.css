@@ -35,10 +35,12 @@ p {
 }
 /* 2° Página/*los id se llaman con #*/
 
-#pag2{			
+#pag2,#pag3, #pag4, #pag5{			
 	display: none;
   
 }
+
+
 
 #roles{
 	display: none;
@@ -55,13 +57,25 @@ p {
 
 
 /* creamos contenedor para que centre las tarjetas y el cuerpo del header*/
-.containerHarry {
+.containerHarry{
+	width: 100%;
+	max-width: 800px;
+	background-image: url(/src/Fotos/fondotarjeta.jpg);
+	margin: auto;
+	display: flex;
+	align-items: center;
+		text-align: center;
+		
+}
+
+.containerHarry1,.containerHarry2, .containerHarry3 {
 	width: 100%;
 	max-width: 800px;
 	margin: auto;
-	text-align: center;
-	background-image: url(/src/Fotos/fondotarjeta.jpg);
-	
+	display: flex;
+	align-items: center;
+		text-align: center;
+		
 }
 
 
@@ -212,19 +226,6 @@ header .ocultar {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
   
-/* cambie contenedor para pagina de casas*/
-.containerHarry1 {
-	
-		width: 100%;
-		max-width: 1000px;
-		padding: 200px 20px;
-		margin: auto;
-		display: flex;
-		
-		align-items: center;
-		text-align: center;
-	
-}
 
 
 

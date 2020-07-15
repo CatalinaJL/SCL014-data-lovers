@@ -79,6 +79,11 @@ console.log(slytherin);
 
 // Filtro Varitas 
 
+export const wandsHarryPotter=data.filter(function(data){
+return data.wand.wood !== '';
+})
+console.log(wandsHarryPotter);
+
 export const phoenixFeather = data.filter(function(data){
   return data.wand.core === "phoenix feather"
 })
