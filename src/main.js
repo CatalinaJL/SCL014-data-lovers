@@ -43,15 +43,7 @@ document.getElementById("Casas").addEventListener("click",(evento) => {
     document.getElementById("house").style.display="block";
     verData (data);
 
-    //esto es lo neceario para boton y formulario activo info casas
-    const btnAbrirFormulario = document.querySelector('#btn-abrir');
-    const formulario = document.querySelector('#formulario');
-    // * Boton de abrir formulario
-    btnAbrirFormulario.addEventListener('click', () => {
-  	btnAbrirFormulario.classList.toggle('active');
-	  formulario.classList.toggle('active');
-});
-
+  
 })
 
 //Eventos para mostrar página "Varitas" (página5)
