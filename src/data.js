@@ -49,70 +49,68 @@ export const deathEaters= others.filter(function(others){
  
 // Filtro Casas Hogwarts
 
-const gryffindor = data.filter(function(data){
+export const gryffindor = data.filter(function(data){
   return data.house === "Gryffindor"
-})
+});
 
 console.log(gryffindor);
 
-const hufflepuf = data.filter(function(data){
+
+
+
+
+export const hufflepuf = data.filter(function(data){
   return data.house === "Hufflepuff"
 })
 
 console.log(hufflepuf);
 
-const ravenclaw = data.filter(function(data){
+export const ravenclaw = data.filter(function(data){
   return data.house === "Ravenclaw"
 })
 
 console.log(ravenclaw);
 
-const slytherin = data.filter(function(data){
+export const slytherin = data.filter(function(data){
   return data.house === "Slytherin"
 })
 
 console.log(slytherin);
 
-//export const staffHogwarts = staff.map(function(data){
-  // return data.name;
-//}) 
-//console.log(staffHogwarts)
-//console.log(students);
-//console.log(studentsHogwarts);
+// Filtro Varitas 
 
-/*const dataHP= data; 
-console.log(dataHP);
+export const phoenixFeather = data.filter(function(data){
+  return data.wand.core === "phoenix feather"
+})
 
-console.log(mainAtributtes) 
+console.log(phoenixFeather);
 
-const students = dataHP.filter(hogwarts => (hogwarts.name !==""));
-console.log(students)
+export const dragonHeartstring = data.filter(function(data){
+  return data.wand.core === "dragon heartstring"
+})
 
-const fullNames = dataHP.map(caracther => `${caracther.name} ${caracther.species} ${caracther.house} ${caracther.ancestry} ${caracther.patronus} ${caracther.wand.wood}`);
-const importantInformation = fullNames;
+console.log(dragonHeartstring);
 
-console.log(fullNames);
+export const unicornTailHair = data.filter(function(data){
+  return data.wand.core === "unicorn tail-hair"
+})
 
-
-const importantInformation = () =>{
-  let arrayFullNames= fullNames;
-   for ( i=0, i<arrayFullNames.length;i++);
-   console.log(importantInformation));
-};
-console.log(importantInformation.[0]);
-
-const arrayFullNames = fullNames.values;
-console.log(arrayFullNames);
-console.table(fullNames);
-const data= potter.data
-console.log(dataHP); 
-export const example = () => 'example';
+console.log(unicornTailHair);
 
 
-export default mainAtributtes; 
 
-export default fullNames;
-*/
+
+
+
+
+
+
+
+
+
+
+
+
 //const dataHP = () => 'OMG';
 //export default studentsHogwarts; 
 //export const studentsHogwarts = () => 'example';

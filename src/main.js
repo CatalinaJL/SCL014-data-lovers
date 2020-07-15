@@ -1,4 +1,4 @@
-import { staff,students,phoenixOrder,deathEaters} from './data.js';
+import { staff,students,phoenixOrder,deathEaters,gryffindor,slytherin,ravenclaw,hufflepuf, phoenixFeather,dragonHeartstring,unicornTailHair} from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -41,6 +41,17 @@ document.getElementById("Casas").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag4").style.display="block";
     document.getElementById("house").style.display="block";
+    verData (data);
+
+    //esto es lo neceario para boton y formulario activo info casas
+    const btnAbrirFormulario = document.querySelector('#btn-abrir');
+    const formulario = document.querySelector('#formulario');
+    // * Boton de abrir formulario
+    btnAbrirFormulario.addEventListener('click', () => {
+  	btnAbrirFormulario.classList.toggle('active');
+	  formulario.classList.toggle('active');
+});
+
 })
 
 //Eventos para mostrar página "Varitas" (página5)
@@ -49,6 +60,7 @@ document.getElementById("Varitas").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag5").style.display="block";
     document.getElementById("core").style.display="block";
+    verData (data);
 })
 
 // Función para mostrar la data//
@@ -82,131 +94,141 @@ const verData = (data) => {
         
 };
     
-
 // Declarar variable de select de página de personajes
 const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
- 
+const harryHouse = document.getElementById('house');
+const harryCore = document.getElementById('core');
 
+const primerMono = (infor) =>{
+
+  for (let i=0; i<infor.length; i++){
+    harryBox.innerHTML += `
+    <div class="card">
+    <div class= "cardFull">  
+    <div class="front">
+         <div class ="imagenes"><img src=${infor[i].image} ></div> 
+         <h1>${infor[i].name}</h1>
+    </div>
+    <div class="back">
+         <p>  Especie: ${infor[i].species}</p>
+         <p>  Género: ${infor[i].gender}</p>
+         <p>  Casa: ${infor[i].house}</p>
+         <p>  Patronus: ${infor[i].patronus}</p>
+    </div>
+       </div>
+    </div>
+       `
+   }; 
+   
+}
+ 
+const segundoMono = (infor) =>{
+
+  for (let i=0; i<infor.length; i++){
+    harryBox.innerHTML += `
+    <div class="card">
+    <div class= "cardFull">  
+    <div class="front">
+         <div class ="imagenes"><img src=${infor[i].image} ></div> 
+         <h1>${infor[i].name}</h1>
+    </div>
+    <div class="back">
+         
+         <p>  Casa: ${infor[i].house}</p>
+         
+    </div>
+       </div>
+    </div>
+       `
+   }; 
+   
+}
+const tercerMono = (infor) =>{
+
+  for (let i=0; i<infor.length; i++){
+    harryBox.innerHTML += `
+    <div class="card">
+    <div class= "cardFull">  
+    <div class="front">
+         <div class ="imagenes"><img src=${infor[i].image} ></div> 
+         <h1>${infor[i].name}</h1>
+    </div>
+    <div class="back">
+         <p>  Especie: ${infor[i].species}</p>
+         <p>  Casa: ${infor[i].house}</p>
+         <p>  Patronus: ${infor[i].patronus}</p>
+         
+    </div>
+       </div>
+    </div>
+       `
+   }; 
+   
+}
+ 
 // Evento para que cada opción de select cargue personajes filtrados
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
-       console.log(staff); 
-       console.log(harryType.value);
+       
        harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-    // Para cargar Staff Colegio 
-    if ( harryType.value === "hogwartsStaff"){
-      let harryType1=staff;
-      for (let i=0; i<harryType1.length; i++){
-     harryBox.innerHTML += `
-     <div class="card">
-     <div class= "cardFull">  
-     <div class="front">
-          <div class ="imagenes"><img src=${harryType1[i].image} ></div> 
-          <h1>${harryType1[i].name}</h1>
-     </div>
-     <div class="back">
-          <p>  Especie: ${harryType1[i].species}</p>
-          <p>  Género: ${harryType1[i].gender}</p>
-          <p>  Casa: ${harryType1[i].house}</p>
-          <p>  Patronus: ${harryType1[i].patronus}</p>
-     </div>
-        </div>
-     </div>
-        `
-    };
-    // Para cargar Estudiantes
-    } else if(harryType.value === "hogwartsStudent") {
+        // Para cargar data en menu Todos
+       if ( harryType.value === "todos"){
+        let harryType0=data;
+        primerMono(harryType0);
+       } else if ( harryType.value === "hogwartsStaff"){
+        let harryType1=staff;
+        primerMono(harryType1);
+       } else if(harryType.value === "hogwartsStudent") {
         let harryType2=students;
-        for (let i=0; i<harryType2.length; i++){
-      harryBox.innerHTML += `
-        <div class="card">
-        <div class= "cardFull">  
-        <div class="front">
-          
-        <div class ="imagenes"><img src=${harryType2[i].image} ></div> 
-        <h1>${harryType2[i].name}</h1>
-      </div>
-
-          <div class="back">
-          
-           <p>  Especie: ${harryType2[i].species}</p>
-           <p>  Género: ${harryType2[i].gender}</p>
-           <p>  Casa: ${harryType2[i].house}</p>
-           <p>  Patronus: ${harryType2[i].patronus}</p>
-         
-          </div>
-
-
-
-        </div>
-      </div>
-        `
-    };
-
-
-
-     } else if (harryType.value === 'OrderofthePhoenix') {
+        primerMono(harryType2);
+       } else if (harryType.value === 'OrderofthePhoenix') {
         let harryType3=phoenixOrder;
-  
-        for (let i=0; i<harryType3.length; i++){
+        primerMono(harryType3);
+       } else if ( harryType.value === "Mortífagos") {
+        let harryType4= deathEaters;
+        primerMono(harryType4);
+       };
+
+      });
+// Evento para que cada opción de select cargue casas  filtrados
+harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
-          harryBox.innerHTML += `
-          <div class="card">
-          <div class= "cardFull">  
-          <div class="front">
-            
-          <div class ="imagenes"><img src=${harryType3[i].image} ></div> 
-          <h1>${harryType3[i].name}</h1>
-        </div>
-  
-            <div class="back">
-            
-             <p>  Especie: ${harryType3[i].species}</p>
-             <p>  Género: ${harryType3[i].gender}</p>
-             <p>  Casa: ${harryType3[i].house}</p>
-             <p>  Patronus: ${harryType3[i].patronus}</p>
-           
-            </div>
-  
-  
-  
-          </div>
-        </div>
-          `
-      };
-  
-         
-     } else { harryType.value === "Mortífagos"; {
-         let harryType4= deathEaters
-         for (let i=0; i<harryType4.length; i++){
-       
-            harryBox.innerHTML += `
-            <div class="card">
-            <div class= "cardFull">  
-            <div class="front">
-              
-            <div class ="imagenes"><img src=${harryType4[i].image} ></div> 
-            <h1>${harryType4[i].name}</h1>
-          </div>
-    
-              <div class="back">
-              
-               <p>  Especie: ${harryType4[i].species}</p>
-               <p>  Género: ${harryType4[i].gender}</p>
-               <p>  Casa: ${harryType4[i].house}</p>
-               <p>  Patronus: ${harryType4[i].patronus}</p>
-             
-              </div>
-    
-    
-    
-            </div>
-          </div>
-            `
+        harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
+         // Para cargar data en menu Todos
+        if ( harryHouse.value === "Gry"){
+         let harryHouse0=data;
+         segundoMono(harryHouse0);
+        } else if ( harryHouse.value === "Gryffindor"){
+         let harryHouse1=gryffindor;
+         segundoMono(harryHouse1);
+        } else if(harryHouse.value === "Slytherin") {
+         let harryHouse2=slytherin;
+         segundoMono(harryHouse2);
+        } else if (harryHouse.value === 'Ravenclaw') {
+         let harryHouse3=ravenclaw;
+         segundoMono(harryHouse3);
+        } else if ( harryHouse.value === "Hufflepuff") {
+         let harryHouse4= hufflepuf;
+         segundoMono(harryHouse4);
         };
-     }
-         
-     } 
-     
-});
+ 
+       });
 
-
+// Evento para que cada opción de select cargue varitas
+harryCore.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
+       
+  harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
+   // Para cargar data en menu Todos
+  if ( harryCore.value === "varitas"){
+   let harryCore0=data.wand.core;
+   tercerMono(harryCore0);
+  } else if ( harryCore.value === "phoenix feather"){
+   let harryCore1=phoenixFeather;
+   tercerMono(harryCore1);
+  } else if(harryCore.value === "dragon heartstring") {
+   let harryCore2=dragonHeartstring;
+   tercerMono(harryCore2);
+  } else if (harryCore.value === 'unicorn tail-hair') {
+   let harryCore3=unicornTailHair;
+   tercerMono(harryCore3);
+  } 
+ });
