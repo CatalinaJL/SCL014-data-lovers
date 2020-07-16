@@ -153,9 +153,8 @@ const tercerMono = (infor) =>{
  
 // Evento para que cada opción de select de página personajes cargue personajes filtrados
 harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
-       
-       harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-        // Para cargar data en menu Todos
+      harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
+      // Para cargar data en menu Todos
        if ( harryType.value === "todos"){
         let harryType0=data;
         primerMono(harryType0);

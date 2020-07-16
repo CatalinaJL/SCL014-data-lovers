@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Sahitya:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="ContainerPpal">
+        <Header>
+            <div class="Logo">
+                <img src="/src/Fotos/WU.png" alt="Wizard Unite" >
+            </div>
+            <div class="RedesSociales">
+                <div class="contenedor-icono">
+                    <a href="http://www.twitter.com" target="_blank" class="twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                <div class="contenedor-icono">
+                    <a href="http://www.facebook.com" target="_blank" class="facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="http://www.instagram.com" target="_blank" class="instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </Header>
+<!--Pantalla Inicio -->
+        <div class="Content" id="pag1">
+            <h1>¡Bienvenido a Revelio!</h1>
+            <p>Acá podrás saber toda la información necesaria para entender más el mundo de "Wizards Unite".</p> 
+            <p> Para iniciar tu aventura aprieta las varitas</p>
+            <input type="image" src="Fotos/Varitas más claras.png" class="start" id="start"></input>
+        </div>
+<!--Fin Pantalla Inicio-->
+
+<!--Pantalla Home-->
+        <div class="ContentMainPage" id="pag2">
+            <div class="Bienvenida">
+                <h1>Elige que quieres conocer:</h1>
+            </div>
+            <div class="btonesInicio">
+                <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
+                <p>PERSONAJES</p>
+                <input type="image" src="Fotos/CASAS2.png" id="Casas" />  
+                <p>CASAS</p>
+                <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
+                <p>VARITAS</p>
+            </div>
+        </div>
+<!--Fin Pantalla Home-->
+
+<!--Pantalla Personajes-->
+        <div class="ContentOptions" id="pag3">
+            <div class="navbar"></div>  
+            <div class="ContentCentral">
+                <div class="TituloyTexto">
+                    <h1>PERSONAJES</h1>
+                    <p>¿Quieres saber quienes son los personajes de esta mágica aventura? </p>
+                    <p>Posicionate en una de las cartas y ve sus principales datos.</p>
+                </div>
+                <div class="Select">
+                    <select id="roles" class="roles" >
+                        <option value="todos">Selecciona Rol</option> 
+                        <option value="hogwartsStudent" id= "Estudiantes">Estudiantes </option>
+                        <option value="hogwartsStaff" id="Profesores">Profesores </option>
+                        <option value="OrderofthePhoenix"> Orden del Fénix </option>
+                        <option value="Mortífagos"> Lord Voldemort y Mortífagos </option>
+                    </select>
+                </div>
+                <div class="ventanaDePersonajes" id="root"></div>
+            </div>
+        </div>
+<!--Fin Pantalla Personajes-->
+
+<!--Pantalla Casas-->
+        <div class="ContentOptions" id= "pag4">
+            <div class="navbar"></div>  
+            <div class="ContentCentral">
+                <div class="TituloyTexto">
+                    <h1>Casas de Hogwarts</h1>
+                    <p>La Escuela Hogwarts de Magía y Hechiceria se compone de 4 casas, Gryffindor, Ravenclaw, Hufflepuff y Slytherin.</p>
+                    <p>Al inicio de cada año escolar, los alumnos que inician sus clases en Hogwarts son seleccionados en cada casa por el Sombrero Seleccionador.</p>
+                    <p>Cada casa de Hogwarts tiene caracteristicas distintas, con las que el Sombrero Seleccionador basa su decisión
+                </div>
+            </div> 
+            <div class="Select">
+                <select id="house" >
+                    <option value="Gry"> Casas </option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                </select>
+            </div>
+            <div class="ventanaDePersonajes" id="root"></div>
+        </div>
+<!--Fin Pantalla Casas-->
+
+<!--Pantalla Varitas-->
+        <div class= "ContentOptions" id="pag5">
+            <div class="navbar"></div>  
+            <div class="ContentCentral"> 
+                <div class="TituloyTexto">
+                    <h1>Varitas</h1>
+                    <p>Las varitas son uno de los bienes más preciados por los magos en el mundo mágico. A través de ellas pueden canalizar sus poderes para lograr hechizos y encantamientos. Cada varita tiene caracteristicas importantes, como lo son la madera, el centro y la longitud.</p>
+                    <p>¿Quieres saber quienes comparten elementos en sus varitas? Elige que centro quieres conocer:</p>
+                </div>
+            </div>
+            <div class="Select">
+                <select id="core">
+                    <option value="varitas"> Varitas </option>
+                    <option value="phoenix feather">phoenix feather</option>
+                    <option value="dragon heartstring">dragon heartstring</option>
+                    <option value="unicorn tail-hair">unicorn tail-hair</option>
+                </select>
+            </div>
+            <div class="ventanaDePersonajes" id="root"></div>
+        </div>
+<!--Fin Pantalla Varitas-->
+
+        <footer>
+            <h2>Mundo de Magia para iniciar Wizard Unite Harry Potter</h2>
+            <p1> Catalina & Marcela "LABORATORIA"</p1>
+        </footer>
+    </div>
+
+    <script src="main.js" type="module"></script> 
+</body>
+</html>
