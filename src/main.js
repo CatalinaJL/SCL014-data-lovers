@@ -97,10 +97,10 @@ const primerMono = (infor) =>{
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
-    <div class= "cardFull">  
-    <div class="front">
-         <div class ="imagenes"><img src=${infor[i].image} ></div> 
-         <h1>${infor[i].name}</h1>
+      <div class= "cardFull">  
+        <div class="front">
+          <div class ="imagenes"><img src=${infor[i].image} ></div> 
+          <h1>${infor[i].name}</h1>
     </div>
     <div class="back">
          <p>  Especie: ${infor[i].species}</p>

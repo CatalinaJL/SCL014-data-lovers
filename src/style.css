@@ -155,8 +155,7 @@ header .RedesSociales a i {
 }
     
 .ventanaDePersonajes {
-    display:block;
-    background-color: lightsalmon;
+    display:inline-block;
 	justify-content: center;
 	flex-wrap: wrap;
     width: 100%;
@@ -164,7 +163,9 @@ header .RedesSociales a i {
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
-	padding: 15px;
+    padding: 15px;
+    
+    
   }
 
 /*Especificaciones de Data con HTML dinamico de main.js*/
@@ -177,85 +178,62 @@ header .RedesSociales a i {
 	border-style: solid;
 	border-color: #796B07;
   }
-
+ /* tarjetas front y back*/
 .card{
-	perspective: 700px;
-}
-  
-.card,
-.cardFull {
-	margin: 100px;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 20px;
 }
 
-.cardFull {
-	position: relative;
-	transform-style: preserve-3d;
-	transition: transform .3s linear;
-}
-  
-/*.cardFull .front,
-.cardFull .back {
-    width: 50%;
-    height: auto;
-	margin: 15px;
-	padding: 20px;
-	backface-visibility: hidden;
-}
-  */
-.cardFull .front {
-	background-image: url(/src/Fotos/fondotarjeta.jpg); 
-    color:#dfc161  ;
-    width: 50%;
-    height: auto;
-	margin: 15px;
-	padding: 20px;
-	text-align: center;
-	border-radius: 9px;
+.cardFull{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2) ;
+    border-radius: 9px;
 	border-style: solid;
-    border-color: #796B07;
-  }
-
-.cardFull .front h1{
-    font-size: 30px;
+	border-color:  #796B07;
 }
 
-.cardFull .back {
-    background-image: url(/src/Fotos/fondotarjeta.jpg); 
-    width: 50%;
-    height: auto;
-	/*margin: 15px;*/
-	padding: 20px;
-	text-align: inherit;
-	border-radius: 9px;
-	border-style: solid;
-    border-color: #796B07;
+.card:hover .cardFull{
+    transform: rotateY(180deg);
+}
+
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
-    /*background-image: url(/src/Fotos/fondotarjeta.jpg);
-    width: 50%;
-    height: auto;
-	margin: 15px;
-	padding: 20px;
-	text-align: left;
-	font-size: 18px;
-	/*border-radius: 9px;
-	border-style: solid;
-    border-color:  #796B07;
-    */
-    backface-visibility: hidden;
-  
-  }
-  .cardFull .back {
-	position: absolute;
-	top: 0;
-	transform: rotateY(180deg);
-  }
-  
-  .card:hover .cardFull {
-	transform: rotateY(180deg);
-  }
-/*Texto Cartas*/
+}
 
+.front{
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+}
+
+.front h1{
+    font-size: 25px;
+}
+
+.back{
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    color: whitesmoke;
+    transform: rotateY(180deg);
+}
+
+.back p{
+    font-size: 20px;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 footer {
     background:#BAB8B4;
     text-align:  center;
