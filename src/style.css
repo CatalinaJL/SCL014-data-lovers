@@ -21,7 +21,8 @@ p{
 
 .ContainerPpal{
     background-color: #323F5A;
-    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header{
@@ -39,8 +40,8 @@ header .Logo{
 }
 
 header img{
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: auto;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -54,13 +55,15 @@ header .RedesSociales{
     text-align: right;
 	padding: 20px;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 header .RedesSociales a{
     display: block;
 	width: 40px;
 	height: 40px;
-	background: #a49c9c;
+	background: hsl(0, 4%, 63%);
 	color: #fff;
 	margin: 20px;
 	text-align: center;
@@ -79,7 +82,8 @@ header .RedesSociales a i {
 
 .Content{
     text-align: center;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .Content h1{
@@ -93,6 +97,28 @@ header .RedesSociales a i {
 	border-radius: 9px;
 	border-style: solid;
 	border-color: #796B07;	
+}
+
+.ContentMainPage{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding:5%;
+    box-sizing: border-box;
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+}
+
+.ContentMainPage .btonesInicio{
+    text-align: left;
+}
+
+#Personajes, #Casas, #Varitas {
+	margin: 15px;
+	padding: 20px;
+	text-align:center ;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
 }
 
 footer{
