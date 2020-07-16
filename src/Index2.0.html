@@ -48,40 +48,32 @@
                 <h1>Elige que quieres conocer:</h1>
             </div>
             <div class="btonesInicio">
-                <div class="btonPersonajes">
                 <input type="image" src="Fotos/PERSONAJES2.png" id="Personajes" value="personajes"/>
                 <p>PERSONAJES</p>
-                </div>
-                <div class="btonCasas">
                 <input type="image" src="Fotos/CASAS2.png" id="Casas" />  
                 <p>CASAS</p>
-                </div>
-                <div class="btonVaritas">
                 <input type="image" src="Fotos/VARITAS2.png" id="Varitas" />
                 <p>VARITAS</p>
-                </div>
             </div>
         </div>
 <!--Fin Pantalla Home-->
 
 <!--Pantalla Personajes-->
         <div class="ContentOptions" id="pag3">
-            <div class="navbar"></div>  
+            <div class="navbar">
+            </div>  
             <div class="ContentCentral">
-                <div class="TituloyTexto">
-                    <h1>PERSONAJES</h1>
-                    <p>¿Quieres saber quienes son los personajes de esta mágica aventura? </p>
-                    <p>Posicionate en una de las cartas y ve sus principales datos.</p>
-                </div>
-                <div class="Select">
-                    <select id="roles" class="roles" >
-                        <option value="todos">Selecciona Rol</option> 
-                        <option value="hogwartsStudent" id= "Estudiantes">Estudiantes </option>
-                        <option value="hogwartsStaff" id="Profesores">Profesores </option>
-                        <option value="OrderofthePhoenix"> Orden del Fénix </option>
-                        <option value="Mortífagos"> Lord Voldemort y Mortífagos </option>
-                    </select>
-                </div>
+                <h1>PERSONAJES</h1>
+                <p>¿Quieres saber quienes son los personajes de esta mágica aventura? </p>
+                <p>Posicionate en una de las cartas y ve sus principales datos.</p>
+                <select id="roles" class="roles" >
+                    <option value="todos">Selecciona Rol</option> 
+                    <option value="hogwartsStudent" id= "Estudiantes">Estudiantes </option>
+                    <option value="hogwartsStaff" id="Profesores">Profesores </option>
+                    <option value="OrderofthePhoenix"> Orden del Fénix </option>
+                    <option value="Mortífagos"> Lord Voldemort y Mortífagos </option>
+                </select>
+            </div>
                 <div class="ventanaDePersonajes" id="root"></div>
             </div>
         </div>

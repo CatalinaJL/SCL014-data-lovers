@@ -5,6 +5,7 @@
 body{
     background-color: #323F5A;
 }
+
 h1 {
     font-family:'Sahitya', serif;
     color:#BAB8B4;
@@ -76,6 +77,16 @@ header .RedesSociales a i {
 	line-height: 40px;
 }
 
+
+.ContentMainPage{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+ 
+}
+
+
 #pag2,#pag3, #pag4, #pag5{			
 	display: none;
 }
@@ -99,29 +110,153 @@ header .RedesSociales a i {
 	border-color: #796B07;	
 }
 
+
 .ContentMainPage{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    padding:5%;
     box-sizing: border-box;
     background-image: url(/src/Fotos/fondotarjeta.jpg);
+    text-align: center;
+    
 }
 
-.ContentMainPage .btonesInicio{
-    text-align: left;
-}
-
-#Personajes, #Casas, #Varitas {
-	margin: 15px;
-	padding: 20px;
-	text-align:center ;
+.ContentMainPage .btonesInicio #Personajes, #Casas, #Varitas {
+    width:20%;
+    height: auto;
+    margin:5%;
+	padding: 5%;
 	border-radius: 9px;
 	border-style: solid;
 	border-color: #796B07;
 }
+.ContentMainPage .btonesInicio p{
+    text-align: center;
+    margin:3%;
+}
 
-footer{
+.ContentOptions{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+}
+
+.ContentCentral .roles {
+    align-items: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color:#323F5A ;
+    color: #BAB8B4;
+    font-family:'Roboto Slab', serif;
+    font-size: 15px;
+}
+    
+.ventanaDePersonajes {
+    display:block;
+    background-color: lightsalmon;
+	justify-content: center;
+	flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+  }
+
+/*Especificaciones de Data con HTML dinamico de main.js*/
+
+.imagenes img {
+	width: 25%;
+    height: 25%;
+    margin: 5%;
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #796B07;
+  }
+
+.card{
+	perspective: 700px;
+}
+  
+.card,
+.cardFull {
+	margin: 100px;
+}
+
+.cardFull {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform .3s linear;
+}
+  
+/*.cardFull .front,
+.cardFull .back {
+    width: 50%;
+    height: auto;
+	margin: 15px;
+	padding: 20px;
+	backface-visibility: hidden;
+}
+  */
+.cardFull .front {
+	background-image: url(/src/Fotos/fondotarjeta.jpg); 
+    color:#dfc161  ;
+    width: 50%;
+    height: auto;
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 9px;
+	border-style: solid;
+    border-color: #796B07;
+  }
+
+.cardFull .front h1{
+    font-size: 30px;
+}
+
+.cardFull .back {
+    background-image: url(/src/Fotos/fondotarjeta.jpg); 
+    width: 50%;
+    height: auto;
+	/*margin: 15px;*/
+	padding: 20px;
+	text-align: inherit;
+	border-radius: 9px;
+	border-style: solid;
+    border-color: #796B07;
+    backface-visibility: hidden;
+    
+    /*background-image: url(/src/Fotos/fondotarjeta.jpg);
+    width: 50%;
+    height: auto;
+	margin: 15px;
+	padding: 20px;
+	text-align: left;
+	font-size: 18px;
+	/*border-radius: 9px;
+	border-style: solid;
+    border-color:  #796B07;
+    */
+    backface-visibility: hidden;
+  
+  }
+  .cardFull .back {
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+  }
+  
+  .card:hover .cardFull {
+	transform: rotateY(180deg);
+  }
+/*Texto Cartas*/
+
+footer {
     background:#BAB8B4;
     text-align:  center;
     font-size: 18px;

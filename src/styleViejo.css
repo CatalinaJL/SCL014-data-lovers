@@ -295,3 +295,21 @@ footer .redes-sociales a i {
 	line-height: 60px;
 }
 
+
+
+
+
+
+
+
+.ContentMainPage{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    
+}
