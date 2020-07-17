@@ -20,8 +20,9 @@ p{
 	font-size: 25px;
 }
 
+/* revisar el tono de color, creo que este se asemeja mas a la tarjeta y se ve mejor 2B3E53*/ 
 .ContainerPpal{
-    background-color: #323F5A;
+    background-color: #2B3E53;
     width: 100%;
     box-sizing: border-box;
 }
@@ -34,7 +35,7 @@ header{
     grid-template-columns: auto auto;
     padding: 10px;
   }
-
+  
 
 header .Logo{
     margin-top: 1%;
@@ -78,33 +79,13 @@ header .RedesSociales a i {
 }
 
 
-.ContentMainPage{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-image: url(/src/Fotos/fondotarjeta.jpg);
- 
-}
+
 
 
 #pag2,#pag3, #pag4, #pag5{			
 	display: none;
 }
 
-/*Selects de cada página */
-
-#roles{
-	display: none;
-}
-
-
-#house{
-	display:none;
-}
-
-#core{
-	display:none;
-}
 
 .Content{
     text-align: center;
@@ -128,33 +109,74 @@ header .RedesSociales a i {
 
 .ContentMainPage{
     width: 60%;
+    
     margin-left: 20%;
     margin-right: 20%;
-    box-sizing: border-box;
+    
+    
     background-image: url(/src/Fotos/fondotarjeta.jpg);
-    text-align: center;
+    
+    
     
 }
+/*
+.ContentMainPage{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    
+ lo teniamos repetido
+}
+*/
 
 .ContentMainPage .btonesInicio #Personajes, #Casas, #Varitas {
-    width:20%;
+    width:10%;
     height: auto;
     margin:5%;
 	padding: 5%;
 	border-radius: 9px;
 	border-style: solid;
-	border-color: #796B07;
+    border-color: #796B07;
+    
+    
 }
+
+/*aqui agrege esto de display para que se vea*/
+
 .ContentMainPage .btonesInicio p{
     text-align: center;
     margin:3%;
+    display: inline-block;
+    
+    
 }
+
+
+  
 
 .ContentOptions{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     box-sizing: border-box;
+    background-color: seagreen;
+    
+    
+    
+}
+
+/* aqui veremos el nav*/
+
+.navbar {
+    width: 70%;
+    height: 200px;
+    margin:20px 50px;
+    padding: 30px;
+    background-color: saddlebrown;
+    display: block;
+    
+
 }
 
 .ContentCentral .roles {
@@ -197,19 +219,20 @@ header .RedesSociales a i {
     
 	justify-content: center;
 	flex-wrap: wrap;
-    width: 80%;
+    width: 60%;
     height: auto;
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
     padding: 15px;
     
+    
   }
 
 /*Especificaciones de Data con HTML dinamico de main.js*/
 
 .imagenes img {
-	width: 40%;
+	width: 50%;
     height: 40%;
     margin: 5%;
 	border-radius: 9px;
@@ -219,8 +242,8 @@ header .RedesSociales a i {
  /* tarjetas front y back*/
 .card{
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     perspective: 1000px;
     margin: 20px;
     display: inline-block;
