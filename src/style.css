@@ -91,6 +91,21 @@ header .RedesSociales a i {
 	display: none;
 }
 
+/*Selects de cada página */
+
+#roles{
+	display: none;
+}
+
+
+#house{
+	display:none;
+}
+
+#core{
+	display:none;
+}
+
 .Content{
     text-align: center;
     width: 100%;
@@ -142,7 +157,7 @@ header .RedesSociales a i {
     box-sizing: border-box;
 }
 
-.ContentCentral .roles {
+.ContentCentral .roles.house {
     align-items: left;
     margin-left: 0%;
     margin-right: 0%;
@@ -154,8 +169,10 @@ header .RedesSociales a i {
     font-size: 15px;
 }
     
+
+
 .ventanaDePersonajes {
-    display:inline-block;
+    
 	justify-content: center;
 	flex-wrap: wrap;
     width: 100%;
@@ -235,6 +252,8 @@ header .RedesSociales a i {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
 footer {
     background:#BAB8B4;
     text-align:  center;
