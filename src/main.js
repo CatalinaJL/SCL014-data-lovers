@@ -116,12 +116,13 @@ const primerMono = (infor) =>{
 }
 
 // Función para mostrar información relacionada al select de Casas
+
 const segundoMono = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
-    <div class= "cardFull">  
+    <div class= "cardstatic">  
       <div class="front">
          <div class ="imagenes"><img src=${infor[i].image} ></div> 
          <h1>${infor[i].name}</h1>
@@ -132,6 +133,7 @@ const segundoMono = (infor) =>{
    }; 
    
 }
+
 //Función para mostrar información de select de Varitas 
 
 const tercerMono = (infor) =>{
@@ -139,12 +141,20 @@ const tercerMono = (infor) =>{
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
-    <div class= "cardFull">  
-      <div class="front">
-         <div class ="imagenes"><img src=${infor[i].image} ></div> 
-         <h1>${infor[i].name}</h1>
+      <div class= "cardFull">  
+        <div class="front">
+           <div class ="imagenes"><img src=${infor[i].image} ></div> 
+          <h1>${infor[i].name}</h1>
+        </div>
+       <div class="back">
+          <div class="imagenlogo"> <img src="/src/Fotos/Varitacartas.png"></div>
+          <div class ="infovaritas">
+          <p>  Madera: ${infor[i].wand.wood}</p>
+          <p>  Núcleo: ${infor[i].wand.core}</p>
+          <p>  Longitud: ${infor[i].wand.length}</p>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
        `
    }; 
