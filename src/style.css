@@ -157,7 +157,7 @@ header .RedesSociales a i {
     box-sizing: border-box;
 }
 
-.ContentCentral .roles.house {
+.ContentCentral .roles {
     align-items: left;
     margin-left: 0%;
     margin-right: 0%;
@@ -168,14 +168,36 @@ header .RedesSociales a i {
     font-family:'Roboto Slab', serif;
     font-size: 15px;
 }
-    
+  
+.ContentCentral .house {
+    align-items: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color:#323F5A ;
+    color: #BAB8B4;
+    font-family:'Roboto Slab', serif;
+    font-size: 15px;
+}
 
+.ContentCentral .core {
+    align-items: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color:#323F5A ;
+    color: #BAB8B4;
+    font-family:'Roboto Slab', serif;
+    font-size: 15px;
+}
 
 .ventanaDePersonajes {
     
 	justify-content: center;
 	flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     height: auto;
 	max-width: 100%;
 	margin: auto;
@@ -187,8 +209,8 @@ header .RedesSociales a i {
 /*Especificaciones de Data con HTML dinamico de main.js*/
 
 .imagenes img {
-	width: 25%;
-    height: 25%;
+	width: 40%;
+    height: 40%;
     margin: 5%;
 	border-radius: 9px;
 	border-style: solid;

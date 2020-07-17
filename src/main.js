@@ -52,7 +52,7 @@ document.getElementById("Varitas").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag5").style.display="block";
     document.getElementById("core").style.display="block";
-    verData (data);
+    verData (wandsHarryPotter);
 })
 
 // Función para mostrar la data//
