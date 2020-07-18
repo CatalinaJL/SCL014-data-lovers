@@ -122,11 +122,14 @@ const segundoMono = (infor) =>{
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
     <div class="card">
-    <div class= "cardstatic">  
+    <div class= "cardFull">  
       <div class="front">
          <div class ="imagenes"><img src=${infor[i].image} ></div> 
          <h1>${infor[i].name}</h1>
       </div>
+      <div class="back">
+        <div class ="imagenes"><img src=${infor[i].houseimg}></div>
+        </div>
       </div>
     </div>
        `
