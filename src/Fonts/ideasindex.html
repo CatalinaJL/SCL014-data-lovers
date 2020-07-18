@@ -1,0 +1,122 @@
+<!--Ideas de Tarjetas-->
+<section class="gridDePersonajes" id=""gridDePersonajes">
+    <article class="personajePelicula">
+      <div class="tarjeta">
+        <div class="frente">
+          <div class="imageneslogo">
+            <img src="logoJuego.png" >
+
+          </div>
+          <h1>Harry Potter</h1>
+          <div class="imagenPersonaje">
+            <img src='http://hp-api.herokuapp.com/images/harry.jpg' >
+          </div>
+        </div>
+          <div class="atras">
+            <div class="imagenJuego">
+              <img src="logoSinFondo.png" >
+            </div>
+            <p> 'Specie:HUMAN'   </p>
+            <p> 'Gender:MALE'  </p>
+            <p> ' House:GRYFFINDOR'   </p>
+            <P> 'Rol:STUDENT'  </P>
+          </div>
+      </div>
+   </article>
+
+   <p id="demo"></p>
+
+    <article class="personajePelicula">
+      <div class="tarjeta">
+        <div class="frente">
+          <div class="imageneslogo">
+            <img src= "logoJuego.png ">
+
+          </div>
+          <h1>Hermione Grander</h1>
+          <div class="imagenPersonaje">
+            <img src='http://hp-api.herokuapp.com/images/hermione.jpeg' >
+          </div>
+        </div>
+          <div class="atras">
+            <div class="imagenJuego">
+              <img src="logoSinFondo.png" >
+            </div>
+            <p> 'Specie:HUMAN'   </p>
+            <p> 'Gender:FEMALE'  </p>
+            <p> ' House:GRYFFINDOR'   </p>
+            <P> 'Rol:STUDENT'  </P>
+
+          </div>
+      </div>
+    </article>
+
+  </section>
+  </div>
+
+  <!-- SELECTS-->
+  <section class="categorias"   id="input-box">
+    <select id="selectPersonajes" class="ocultar">
+      <option >Seleccion de Personajes</option>
+      <option value="estudiante">Estudiante</option>
+      <option value="profesores">Profesores</option>
+      <option value="otrosPersonajes">Otros Personajes</option>
+    </select>
+    <select id="casas" class="ocultar">
+      <option value="SeleccionCasas">Seleccione Casas</option>
+      <option value="Gryffindor">Gryffindor</option>
+      <option value="Slytherin">Slytherin</option>
+      <option value="Ravenclaw">Ravenclaw</option>
+      <option value="Hufflepuff">Hufflepuff</option>
+    </select>
+   <select id="varita" class="ocultar">
+      <option value="varitas">Seleccione Varitas</option>
+      <option value="phoenix feather">phoenix feather</option>
+      <option value="dragon heartstring">dragon heartstring</option>
+      <option value="unicorn tail-hair">unicorn tail-hair</option>
+    </select>
+  </section>
+
+
+
+
+
+
+//Contenedor para botones de casas
+
+  <div class="contenedor-btn">
+    <img src="/src/Fotos/gryffindor.png" alt="logo gryffindor" width="350px" height="250px">
+    <img src="/src/Fotos/gryffindor.png" alt="logo gryffindor" width="350px" height="250px">
+    <img src="/src/Fotos/gryffindor.png" alt="logo gryffindor" width="350px" height="250px">
+    <img src="/src/Fotos/gryffindor.png" alt="logo gryffindor" width="350px" height="250px">
+
+    <button class="btn-abrir" id="btn-abrir">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+
+
+
+  <!-- Formulario para escribir sobre las casas  -->
+  <section id="formulario" class="formulario">
+    <h1>Casas</h1>
+    <p>hablemos de la casa Gryffindor</p>
+    
+  </section>
+
+
+
+//CSS
+  /* cambie contenedor para pagina de casas*/
+.containerHarry1 {
+	
+		width: 100%;
+		max-width: 1000px;
+		padding: 200px 20px;
+		margin: auto;
+		display: flex;
+		
+		align-items: center;
+		text-align: center;
+	
+}
