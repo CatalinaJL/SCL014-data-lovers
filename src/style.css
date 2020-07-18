@@ -147,19 +147,10 @@ header .RedesSociales a i {
     margin-left: 20%;
     margin-right: 20%;
     box-sizing: border-box;
-    background-color: seagreen;
+    background-color: #2B3E53;
 }
 
-/* aqui veremos el nav*/
 
-.navbar {
-    width: 70%;
-    height: 200px;
-    margin:20px 50px;
-    padding: 30px;
-    background-color: saddlebrown;
-    float: left;
-}
 
 .ContentCentral .roles {
     align-items: left;

@@ -1,4 +1,4 @@
-import { staff,students,phoenixOrder,deathEaters,gryffindor,slytherin,ravenclaw,hufflepuf,wandsHarryPotter, phoenixFeather,dragonHeartstring,unicornTailHair} from './data.js';
+import { staff,students,phoenixOrder,deathEaters,housesHogwarts,gryffindor,slytherin,ravenclaw,hufflepuf,wandsHarryPotter, phoenixFeather,dragonHeartstring,unicornTailHair} from './data.js';
 
 import data from './data/potter/potter.js';
 
@@ -41,7 +41,7 @@ document.getElementById("Casas").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag4").style.display="block";
     document.getElementById("house").style.display="block";
-    verData (data);
+    housesHP (housesHogwarts);
 
   
 })
@@ -52,7 +52,7 @@ document.getElementById("Varitas").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag5").style.display="block";
     document.getElementById("core").style.display="block";
-    verData (wandsHarryPotter);
+    wandsHP (wandsHarryPotter);
 })
 
 // Función para mostrar la data//
@@ -92,7 +92,7 @@ const harryHouse = document.getElementById('house');
 const harryCore = document.getElementById('core');
 
 // Función para mostrar información relacionada al select de personajes
-const primerMono = (infor) =>{
+const caractherHP = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
@@ -117,7 +117,7 @@ const primerMono = (infor) =>{
 
 // Función para mostrar información relacionada al select de Casas
 
-const segundoMono = (infor) =>{
+const housesHP = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
@@ -139,7 +139,7 @@ const segundoMono = (infor) =>{
 
 //Función para mostrar información de select de Varitas 
 
-const tercerMono = (infor) =>{
+const wandsHP = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
     harryBox.innerHTML += `
@@ -170,19 +170,19 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
       // Para cargar data en menu Todos
        if ( harryType.value === "todos"){
         let harryType0=data;
-        primerMono(harryType0);
+        caractherHP(harryType0);
        } else if ( harryType.value === "hogwartsStaff"){
         let harryType1=staff;
-        primerMono(harryType1);
+        caractherHP(harryType1);
        } else if(harryType.value === "hogwartsStudent") {
         let harryType2=students;
-        primerMono(harryType2);
+        caractherHP(harryType2);
        } else if (harryType.value === 'OrderofthePhoenix') {
         let harryType3=phoenixOrder;
-        primerMono(harryType3);
+        caractherHP(harryType3);
        } else if ( harryType.value === "Mortífagos") {
         let harryType4= deathEaters;
-        primerMono(harryType4);
+        caractherHP(harryType4);
        };
 
       });
@@ -193,20 +193,20 @@ harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento
         harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
          // Para cargar data en menu Todos
         if ( harryHouse.value === "Gry"){
-         let harryHouse0=data;
-         segundoMono(harryHouse0);
+         let harryHouse0=housesHogwarts;
+         housesHP(harryHouse0);
         } else if ( harryHouse.value === "Gryffindor"){
          let harryHouse1=gryffindor;
-         segundoMono(harryHouse1);
+         housesHP(harryHouse1);
         } else if(harryHouse.value === "Slytherin") {
          let harryHouse2=slytherin;
-         segundoMono(harryHouse2);
+         housesHP(harryHouse2);
         } else if (harryHouse.value === 'Ravenclaw') {
          let harryHouse3=ravenclaw;
-         segundoMono(harryHouse3);
+         housesHP(harryHouse3);
         } else if ( harryHouse.value === "Hufflepuff") {
          let harryHouse4= hufflepuf;
-         segundoMono(harryHouse4);
+         housesHP(harryHouse4);
         };
  
        });
@@ -218,15 +218,15 @@ harryCore.addEventListener('change', () => {// a mi harryType le paso el evento 
    // Para cargar data en menu Todos
   if ( harryCore.value === "varitas"){
    let harryCore0= wandsHarryPotter;
-   tercerMono(harryCore0);
+   wandsHP(harryCore0);
   } else if ( harryCore.value === "phoenix feather"){
    let harryCore1=phoenixFeather;
-   tercerMono(harryCore1);
+   wandsHP(harryCore1);
   } else if(harryCore.value === "dragon heartstring") {
    let harryCore2=dragonHeartstring;
-   tercerMono(harryCore2);
+   wandsHP(harryCore2);
   } else if (harryCore.value === 'unicorn tail-hair') {
    let harryCore3=unicornTailHair;
-   tercerMono(harryCore3);
+   wandsHP(harryCore3);
   } 
  });

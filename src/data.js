@@ -49,6 +49,10 @@ export const deathEaters= others.filter(function(others){
  
 // Filtro Casas Hogwarts
 
+export const housesHogwarts = data.filter(function(data){
+return data.house !== ''; 
+})
+
 export const gryffindor = data.filter(function(data){
   return data.house === "Gryffindor"
 });
