@@ -32,16 +32,23 @@ En base a lo anterior, es que decidimos confeccionar y hacer una encuesta de 5 p
     - Si quieres agregar algo más que te gustaría saber, escribe acá. 
 
 El formulario fue contestado por un total de 35 personas de la siguiente forma: 
-(insertar fotos de respuestas formularios). 
+https://user-images.githubusercontent.com/66574419/87863763-dce59980-c92c-11ea-8a1c-88ee025fc766.JPG
+https://user-images.githubusercontent.com/66574419/87863764-dd7e3000-c92c-11ea-8a14-777f87bffbf4.JPG
+![Respuestas 3 HP](https://user-images.githubusercontent.com/66574419/87863765-de16c680-c92c-11ea-8775-13f243974b92.JPG)
+![Respuestas 4 1 HP](https://user-images.githubusercontent.com/66574419/87863766-deaf5d00-c92c-11ea-80e6-1ab640c91152.JPG)
+![Respuestas 4 2 HP](https://user-images.githubusercontent.com/66574419/87863768-deaf5d00-c92c-11ea-8447-3d02ff12ca25.JPG)
+![Respuestas 4 3 HP](https://user-images.githubusercontent.com/66574419/87863769-df47f380-c92c-11ea-9bb7-0a0309a346c5.JPG)
+![Respuestas 5 y 6 HP](https://user-images.githubusercontent.com/66574419/87863770-dfe08a00-c92c-11ea-831e-18548c5fbd91.JPG)
 Gracias a las respuestas obtenidas, decidimos realizar una página orientada a aquellas personas que no conocen de Harry Potter, y quieren iniciarse en este mundo ya sea jugando "Wizards Unite", o empezando a leer los libros, o ver las películas. Además de elegir los 3 grandes ámbitos en los cuales se debería centrar la página: personajes, casas de Hogwarts y varitas.
 
 Al tener estás ideas bases, realizamos sketches en lápiz y papel sobre el flujo de información y la presentación que debería tener, los cuales son: https://imgur.com/xbztF7d ; https://imgur.com/WoISXkF ; (insertar otras fotos)
+
 Después, realizamos prototipos de baja fidelidad en invision: https://catalinajl676034.invisionapp.com/freehand/Harry-Potter-kqXPLDiV1 ; y una versión con interacción (https://marceortega521457.invisionapp.com/console/prototipo-baja-fidelidad-Harry-Potter-ckbybj5vq1cwv015gslsw283m/ckbybjfpg20m4015cm0lojl3l/play#project_console) para poder testearla con usuarios. 
 
 Luego de los testeos con usuarios, hicimos un prototipo de alta fidelidad en Figma (https://www.figma.com/file/HrvnEGwVPZ55z2MFl8J3Gr/Prototipo-1-Harry-Potter?node-id=0%3A1), con el cual hicimos la idea básica de lo que queríamos hacer, y lo compartimos con usuarios para saber su opinión y poder iterar el prototipo.  
 Finalmente, en atención a la opinión de varios usuarios, junto con la investigación de la presentación de la información en la página web oficial del mundo de Harry Potter (https://www.wizardingworld.com/) y de la aplicación del juego "Harry Potter: Wizards Unite", fijamos la imagen final de nuestra página "Revelio", la cual es la siguiente: https://www.figma.com/proto/7aOJHnFzOjdH6oTxKUcrlM/Prototipo-Harry-Potter?node-id=60%3A68&viewport=-2657%2C186%2C0.5&scaling=min-zoom . 
 
-Actualmente, estamos en proceso de construcción de nuestra página y poder hacer funcional la página de "Personajes", con los filtros correspondientes, para poder realizar las pruebas de usabilidad correspondientes. 
+Actualmente, nuestra página se encuentra operativa con información dirigida a personas que conocen del mundo de Harry Potter, y queremos realizar nuestra próxima iteración del proyecto incorporando más información para que pueda ser usada por el público objetivo, el cual es el que no tiene conocimiento de Harry Potter. 
 
 
 
