@@ -28,7 +28,7 @@ p{
 }
 
 header{
-    background-color: #323F5A;
+    background-color: #2B3E53;
     height: inherit;
     width: inherit;
     display: grid;
@@ -109,15 +109,9 @@ header .RedesSociales a i {
 
 .ContentMainPage{
     width: 60%;
-    
     margin-left: 20%;
     margin-right: 20%;
-    
-    
     background-image: url(/src/Fotos/fondotarjeta.jpg);
-    
-    
-    
 }
 /*
 .ContentMainPage{
@@ -138,8 +132,6 @@ header .RedesSociales a i {
 	border-radius: 9px;
 	border-style: solid;
     border-color: #796B07;
-    
-    
 }
 
 /*aqui agrege esto de display para que se vea*/
@@ -148,8 +140,6 @@ header .RedesSociales a i {
     text-align: center;
     margin:3%;
     display: inline-block;
-    
-    
 }
 
 .ContentOptions{
@@ -158,9 +148,6 @@ header .RedesSociales a i {
     margin-right: 20%;
     box-sizing: border-box;
     background-color: seagreen;
-    
-    
-    
 }
 
 /* aqui veremos el nav*/
@@ -172,8 +159,6 @@ header .RedesSociales a i {
     padding: 30px;
     background-color: saddlebrown;
     float: left;
-    
-
 }
 
 .ContentCentral .roles {
@@ -213,7 +198,6 @@ header .RedesSociales a i {
 }
 
 .ventanaDePersonajes {
-    
 	justify-content: center;
 	flex-wrap: wrap;
     width: 60%;
@@ -221,9 +205,7 @@ header .RedesSociales a i {
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
-    padding: 15px;
-    
-    
+    padding: 15px;    
   }
 
 /*Especificaciones de Data con HTML dinamico de main.js*/
@@ -298,6 +280,9 @@ header .RedesSociales a i {
     width: 15px;
     height: 15px;
     margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 

@@ -128,7 +128,7 @@ const segundoMono = (infor) =>{
          <h1>${infor[i].name}</h1>
       </div>
       <div class="back">
-        <div class ="imagenes"><img src=${infor[i].houseimg}></div>
+        <div class ="imagenlogo"><img src=${infor[i].houseimg}></div>
         </div>
       </div>
     </div>
