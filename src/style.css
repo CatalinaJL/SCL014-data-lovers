@@ -104,7 +104,7 @@ header .RedesSociales a i {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    background-image: url(/src/Fotos/fondotarjeta.png);
+    background-image: url(https://user-images.githubusercontent.com/66574419/87886404-8f2f6680-c9ea-11ea-97b1-539efb7932b0.png),
 }
 
 .ContentMainPage .btonesInicio #Personajes, #Casas, #Varitas {
@@ -227,7 +227,7 @@ header .RedesSociales a i {
 }
 
 .front{
-    background-image: url(/src/Fotos/fondotarjeta.png);
+    background-image: url(https://user-images.githubusercontent.com/66574419/87886404-8f2f6680-c9ea-11ea-97b1-539efb7932b0.png);
 }
 
 .front h1{
@@ -235,7 +235,7 @@ header .RedesSociales a i {
 }
 
 .back{
-    background-image: url(/src/Fotos/fondotarjeta.png);
+    background-image: url(https://user-images.githubusercontent.com/66574419/87886404-8f2f6680-c9ea-11ea-97b1-539efb7932b0.png);
     color: whitesmoke;
     transform: rotateY(180deg);
 }
