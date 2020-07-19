@@ -146,7 +146,7 @@ const wandsHP = (infor) =>{
           <h1>${infor[i].name}</h1>
         </div>
        <div class="back">
-          <div class="imagenlogo"> <img src="/src/Fotos/Varitacartas.png"></div>
+          <div class="imagenlogo"> <img src="https://user-images.githubusercontent.com/66574419/87886112-6a39f400-c9e8-11ea-9bf5-6a45417d5304.png"></div>
           <div class ="infovaritas">
           <p>  Madera: ${infor[i].wand.wood}</p>
           <p>  Núcleo: ${infor[i].wand.core}</p>
