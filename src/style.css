@@ -104,7 +104,7 @@ header .RedesSociales a i {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    background-image: url(/src/Fotos/fondotarjeta.png);
 }
 
 .ContentMainPage .btonesInicio #Personajes, #Casas, #Varitas {
@@ -227,7 +227,7 @@ header .RedesSociales a i {
 }
 
 .front{
-    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    background-image: url(/src/Fotos/fondotarjeta.png);
 }
 
 .front h1{
@@ -235,7 +235,7 @@ header .RedesSociales a i {
 }
 
 .back{
-    background-image: url(/src/Fotos/fondotarjeta.jpg);
+    background-image: url(/src/Fotos/fondotarjeta.png);
     color: whitesmoke;
     transform: rotateY(180deg);
 }
