@@ -2,11 +2,9 @@ import { staff,students,phoenixOrder,deathEaters,housesHogwarts,gryffindor,slyth
 
 import data from './data/potter/potter.js';
 
-//import data from './data.js';
-
 console.log(data);
 
-//primero voy a llamar todos los Id//
+/* Establecer variables de ID para utilizarlos en Addeventlistener*/
 
 let start=document.getElementById("start");
 let pag1= document.getElementById("pag1");
@@ -15,47 +13,44 @@ let pag3=document.getElementById("pag3");
 let pag4=document.getElementById("pag4");
 let pag5=document.getElementById("pag5");
 
-const harryBox = document.getElementById('root'); //variable que contiene a la ventana de persoanjes  que me voy a traer//
+/*Variable que contiene a la ventana de personajes que mostrara data en HTML*/
+const harryBox = document.getElementById('root'); 
 
-//const harryType= document.getElementById('roles'); // variabke que contiene el primer filtro por roles en la pelicula//
+/*Eventos para mostrar página 1 a página 2*/
 
-// Eventos para mostrar página 1 a página 2
 document.getElementById("start").addEventListener("click",(evento) => {
     evento.preventDefault();
     document.getElementById("pag1").style.display="none";
     document.getElementById("pag2").style.display="block";
-})
+});
 
-//Eventos para mostrar página "Personajes" (página3)
+/*Eventos para mostrar página "Personajes" (página3)*/
 document.getElementById("Personajes").addEventListener("click",(evento) => {
-    //evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag3").style.display="block";
     document.getElementById("roles").style.display="block";
     verData (data);
-})
+});
 
-//Eventos para mostrar página "Casas" (página4)
+/*Eventos para mostrar página "Casas" (página4)*/
+
 document.getElementById("Casas").addEventListener("click",(evento) => {
-    evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag4").style.display="block";
     document.getElementById("house").style.display="block";
     housesHP (housesHogwarts);
+});
 
-  
-})
+/*Eventos para mostrar página "Varitas" (página5)*/
 
-//Eventos para mostrar página "Varitas" (página5)
 document.getElementById("Varitas").addEventListener("click",(evento) => {
-    evento.preventDefault();
     document.getElementById("pag2").style.display="none";
     document.getElementById("pag5").style.display="block";
     document.getElementById("core").style.display="block";
     wandsHP (wandsHarryPotter);
-})
+});
 
-// Función para mostrar la data//
+/*Función para mostrar la data completa*/
 const verData = (data) => {
     let resultado= ''; // lo hago vacio para que entre la data
     for (let i=0; i<data.length; i++){
@@ -86,12 +81,13 @@ const verData = (data) => {
         
 };
     
-// Declarar variable de selects de páginas de personajes, casas y varitas
-const harryType = document.getElementById('roles');  ///le digo que trabajemos en roles que es el section donde tengo el menu option
+/*Declarar variable de selects de páginas de personajes, casas y varitas*/
+const harryType = document.getElementById('roles');  
 const harryHouse = document.getElementById('house');
 const harryCore = document.getElementById('core');
 
-// Función para mostrar información relacionada al select de personajes
+/*Función para mostrar información relacionada al select de personajes*/
+
 const caractherHP = (infor) =>{
 
   for (let i=0; i<infor.length; i++){
@@ -113,9 +109,9 @@ const caractherHP = (infor) =>{
        `
    }; 
    
-}
+};
 
-// Función para mostrar información relacionada al select de Casas
+/*Función para mostrar información relacionada al select de Casas*/
 
 const housesHP = (infor) =>{
 
@@ -135,9 +131,9 @@ const housesHP = (infor) =>{
        `
    }; 
    
-}
+};
 
-//Función para mostrar información de select de Varitas 
+/*Función para mostrar información de select de Varitas*/
 
 const wandsHP = (infor) =>{
 
@@ -162,12 +158,13 @@ const wandsHP = (infor) =>{
        `
    }; 
    
-}
+};
  
-// Evento para que cada opción de select de página personajes cargue personajes filtrados
-harryType.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
-      harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-      // Para cargar data en menu Todos
+/*Evento para que cada opción de select de página personajes cargue personajes filtrados*/
+
+harryType.addEventListener('change', () => {   
+      harryBox.innerHTML = '';  
+      /*Para cargar data en menu Todos*/
        if ( harryType.value === "todos"){
         let harryType0=data;
         caractherHP(harryType0);
@@ -185,9 +182,10 @@ harryType.addEventListener('change', () => {// a mi harryType le paso el evento 
         caractherHP(harryType4);
        };
 
-      });
+});
 
-// Evento para que cada opción de select de página de Casas cargue casas  filtrados
+/* Evento para que cada opción de select de página de Casas cargue casas  filtrados*/
+
 harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
        
         harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
@@ -209,13 +207,12 @@ harryHouse.addEventListener('change', () => {// a mi harryType le paso el evento
          housesHP(harryHouse4);
         };
  
-       });
+});
 
-// Evento para que cada opción de select de Página Varitas cargue varitas
-harryCore.addEventListener('change', () => {// a mi harryType le paso el evento escuchar, se lo pase como change 
+/*Evento para que cada opción de select de Página Varitas cargue varitas*/
+harryCore.addEventListener('change', () => {
        
-  harryBox.innerHTML = '';  //esto lo puse porque cuando cargo la pestaña de personajes, se cargan todos, entonces, le pido que se vacie cuando pinche opciones .
-   // Para cargar data en menu Todos
+  harryBox.innerHTML = '';  
   if ( harryCore.value === "varitas"){
    let harryCore0= wandsHarryPotter;
    wandsHP(harryCore0);
@@ -229,4 +226,4 @@ harryCore.addEventListener('change', () => {// a mi harryType le paso el evento 
    let harryCore3=unicornTailHair;
    wandsHP(harryCore3);
   } 
- });
+});

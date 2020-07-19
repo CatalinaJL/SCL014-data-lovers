@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #323F5A;
+    background-color: #2B3E53;
 }
 
 h1 {
@@ -20,7 +20,6 @@ p{
 	font-size: 25px;
 }
 
-/* revisar el tono de color, creo que este se asemeja mas a la tarjeta y se ve mejor 2B3E53*/ 
 .ContainerPpal{
     background-color: #2B3E53;
     width: 100%;
@@ -34,7 +33,7 @@ header{
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-  }
+}
   
 
 header .Logo{
@@ -42,7 +41,7 @@ header .Logo{
 }
 
 header img{
-    width: 15%;
+    width: 80px;
     height: auto;
     margin-top: 20px;
     margin-left: 20px;
@@ -78,14 +77,9 @@ header .RedesSociales a i {
 	line-height: 40px;
 }
 
-
-
-
-
 #pag2,#pag3, #pag4, #pag5{			
 	display: none;
 }
-
 
 .Content{
     text-align: center;
@@ -106,23 +100,12 @@ header .RedesSociales a i {
 	border-color: #796B07;	
 }
 
-
 .ContentMainPage{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     background-image: url(/src/Fotos/fondotarjeta.jpg);
 }
-/*
-.ContentMainPage{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-image: url(/src/Fotos/fondotarjeta.jpg);
-    
- lo teniamos repetido
-}
-*/
 
 .ContentMainPage .btonesInicio #Personajes, #Casas, #Varitas {
     width:10%;
@@ -149,8 +132,6 @@ header .RedesSociales a i {
     box-sizing: border-box;
     background-color: #2B3E53;
 }
-
-
 
 .ContentCentral .roles {
     align-items: left;
@@ -209,6 +190,7 @@ header .RedesSociales a i {
 	border-style: solid;
 	border-color: #796B07;
   }
+
  /* tarjetas front y back*/
 .card{
     background-color: transparent;
@@ -267,7 +249,7 @@ header .RedesSociales a i {
     margin-bottom: 20px;
 }
 
-.back .imagenlogo{
+.imagenlogo{
     width: 15px;
     height: 15px;
     margin-top: 20px;
@@ -275,7 +257,6 @@ header .RedesSociales a i {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-
 
 footer {
     background:#BAB8B4;
@@ -286,5 +267,5 @@ footer {
     padding-bottom: 30px;
     margin-top:25px;
     color:#323F5A ;
-  }
+}
 
