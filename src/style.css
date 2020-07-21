@@ -77,6 +77,42 @@ header .RedesSociales a i {
 	line-height: 40px;
 }
 
+.navbar {
+    position: absolute;
+    left:-80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0
+}
+
+.navbar a:hover{
+    left: 0;
+}
+
+#home{
+    top: 20px;
+    background-color:black;
+}
+
+#personajes{
+    top: 20px;
+    background-color:green;
+}
+
+#casas{
+    top: 20px;
+    background-color:pink;
+}
+
+#varitas{
+    top: 20px;
+    background-color:orange;
+}
+
 #pag2,#pag3, #pag4, #pag5{			
 	display: none;
 }
