@@ -24,6 +24,22 @@ document.getElementById("start").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="block";
 });
 
+
+function goHome (){
+window.location='Index.html';
+
+};
+
+let botonHome=document.getElementById ('home');
+botonHome.addEventListener('click',goHome);
+
+
+
+
+
+
+
+
 /*Eventos para mostrar página "Personajes" (página3)*/
 document.getElementById("Personajes").addEventListener("click",(evento) => {
     document.getElementById("pag2").style.display="none";
@@ -227,3 +243,5 @@ harryCore.addEventListener('change', () => {
    wandsHP(harryCore3);
   } 
 });
+
+
